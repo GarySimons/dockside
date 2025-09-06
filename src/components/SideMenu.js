@@ -1,12 +1,12 @@
-import { Box, Typography } from "@mui/material";
+import { Box } from "@mui/material";
 import React from "react";
-import { Link } from "react-router-dom";
+import StyledLink from "./StyledLink";
 
 const SideMenu = () => {
   return (
     <Box
       sx={{
-        width: "15rem",
+        width: "12rem",
         height: "100vh",
         position: "fixed",
         right: "0",
@@ -18,18 +18,17 @@ const SideMenu = () => {
     >
       <Box
         sx={{
-          backgroundColor: "pink",
           display: "flex",
           flexDirection: "column",
-          gap: "1rem",
+          gap: "0.5rem",
         }}
       >
-        <Link to="/">Home</Link>
-        <Link to="/menus">Menus</Link>
-        <Link to="/events">Events</Link>
-        <Link to="/find-us">Find Us</Link>
-        <Link to="/whats-on">What's On</Link>
-        <Link to="/contact">Contact</Link>
+        <StyledLink to="/">Home</StyledLink>
+        <StyledLink to="/menus">Menus</StyledLink>
+        <StyledLink to="/events">Events</StyledLink>
+        <StyledLink to="/whats-on">What's On</StyledLink>
+        <StyledLink to="/contact">Contact</StyledLink>
+        <StyledLink to="/find-us">Find Us</StyledLink>
       </Box>
     </Box>
   );
