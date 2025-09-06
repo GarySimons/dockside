@@ -2,21 +2,21 @@ import { Box } from "@mui/material";
 import React from "react";
 import SideMenu from "../components/SideMenu";
 
-const Home = () => {
+const Menus = () => {
   return (
     <>
       <SideMenu />
       <Box
         sx={{
-          background: "pink",
+          background: "orange",
           height: "100vh",
           position: "relative",
         }}
       >
-        Home
+        Menus
       </Box>
     </>
   );
 };
 
-export default Home;
+export default Menus;
