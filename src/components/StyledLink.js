@@ -19,6 +19,8 @@ const StyledLink = ({ to, children }) => {
           color: isActive ? "#ff4081" : "#ffffff",
           fontSize: "1.3rem",
           textDecoration: "none",
+          fontFamily: "Google Sans Code",
+          fontWeight: "500",
           "&:hover": {
             opacity: 0.6,
           },

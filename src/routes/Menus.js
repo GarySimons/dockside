@@ -11,7 +11,6 @@ const Menus = () => {
     >
       <Box
         sx={{
-          background: "pink",
           minHeight: "100vh",
           padding: "1rem",
           paddingRight: "17rem",

@@ -15,7 +15,7 @@ const SideMenu = () => {
         right: "0",
         top: "0",
         zIndex: "9",
-        backgroundColor: "#201d1e",
+        backgroundColor: "#3d393a",
         display: "flex",
         flexDirection: "column",
         justifyContent: "space-between",
@@ -40,7 +40,7 @@ const SideMenu = () => {
         sx={{
           display: "flex",
           flexDirection: "column",
-          gap: "1rem",
+          gap: "0.5rem",
           padding: "1rem",
         }}
       >
@@ -48,6 +48,7 @@ const SideMenu = () => {
           sx={{
             display: "flex",
             gap: "0.5rem",
+            marginBottom: "0.5rem",
           }}
         >
           <Box
@@ -102,7 +103,7 @@ const SideMenu = () => {
           </Box>
           <Box
             component="a"
-            href="mailto:someone@example.com"
+            href="mailto:hello@dockside.ca"
             sx={{
               height: "2rem",
               width: "2rem",
@@ -129,6 +130,8 @@ const SideMenu = () => {
             color: "#ffffff",
             fontSize: "0.75rem",
             fontHeight: "1.4",
+            fontFamily: "Google Sans Code",
+            fontWeight: "300",
           }}
         >
           125 Harbour Drive
@@ -136,10 +139,29 @@ const SideMenu = () => {
           St. John's, NL, A1C 6N6
         </Typography>
         <Typography
+          component="a"
+          href="mailto:hello@dockside.ca"
           sx={{
             color: "#ffffff",
             fontSize: "0.75rem",
             fontHeight: "1.4",
+            textDecoration: "none",
+            fontFamily: "Google Sans Code",
+            fontWeight: "300",
+            "&:hover": {
+              opacity: 0.6,
+            },
+          }}
+        >
+          hello@dockside.ca
+        </Typography>
+        <Typography
+          sx={{
+            color: "#ffffff",
+            fontSize: "0.75rem",
+            fontHeight: "1.4",
+            fontFamily: "Google Sans Code",
+            fontWeight: "300",
           }}
         >
           709.726.8076
