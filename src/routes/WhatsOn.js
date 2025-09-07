@@ -4,18 +4,30 @@ import SideMenu from "../components/SideMenu";
 
 const WhatsOn = () => {
   return (
-    <>
-      <SideMenu />
+    <Box
+      sx={{
+        display: "flex",
+      }}
+    >
       <Box
         sx={{
-          background: "yellow",
-          height: "140vh",
-          position: "relative",
+          background: "pink",
+          minHeight: "100vh",
+          padding: "1rem",
+          paddingRight: "15rem",
+          flex: 1,
         }}
       >
-        What's On
+        <Box
+          sx={{
+            background: "white",
+          }}
+        >
+          What's On
+        </Box>
       </Box>
-    </>
+      <SideMenu />
+    </Box>
   );
 };
 

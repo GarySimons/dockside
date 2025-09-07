@@ -4,18 +4,30 @@ import SideMenu from "../components/SideMenu";
 
 const FindUs = () => {
   return (
-    <>
-      <SideMenu />
+    <Box
+      sx={{
+        display: "flex",
+      }}
+    >
       <Box
         sx={{
-          background: "lime",
-          height: "100vh",
-          position: "relative",
+          background: "pink",
+          minHeight: "100vh",
+          padding: "1rem",
+          paddingRight: "15rem",
+          flex: 1,
         }}
       >
-        Find Us
+        <Box
+          sx={{
+            background: "teal",
+          }}
+        >
+          Find Us
+        </Box>
       </Box>
-    </>
+      <SideMenu />
+    </Box>
   );
 };
 

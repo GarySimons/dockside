@@ -4,18 +4,30 @@ import SideMenu from "../components/SideMenu";
 
 const Events = () => {
   return (
-    <>
-      <SideMenu />
+    <Box
+      sx={{
+        display: "flex",
+      }}
+    >
       <Box
         sx={{
-          background: "cyan",
-          height: "100vh",
-          position: "relative",
+          background: "pink",
+          minHeight: "100vh",
+          padding: "1rem",
+          paddingRight: "15rem",
+          flex: 1,
         }}
       >
-        Events
+        <Box
+          sx={{
+            background: "lime",
+          }}
+        >
+          Events
+        </Box>
       </Box>
-    </>
+      <SideMenu />
+    </Box>
   );
 };
 

@@ -4,18 +4,30 @@ import SideMenu from "../components/SideMenu";
 
 const Contact = () => {
   return (
-    <>
-      <SideMenu />
+    <Box
+      sx={{
+        display: "flex",
+      }}
+    >
       <Box
         sx={{
-          background: "green",
-          height: "100vh",
-          position: "relative",
+          background: "pink",
+          minHeight: "100vh",
+          padding: "1rem",
+          paddingRight: "15rem",
+          flex: 1,
         }}
       >
-        Contact
+        <Box
+          sx={{
+            background: "orange",
+          }}
+        >
+          Contact
+        </Box>
       </Box>
-    </>
+      <SideMenu />
+    </Box>
   );
 };
 

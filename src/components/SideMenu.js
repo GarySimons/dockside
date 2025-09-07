@@ -7,13 +7,13 @@ const SideMenu = () => {
     <Box
       sx={{
         width: "12rem",
-        height: "100vh",
+        minHeight: "100vh",
         position: "fixed",
         right: "0",
         top: "0",
         zIndex: "9",
         padding: "1rem",
-        backgroundColor: "#000000",
+        backgroundColor: "#201d1e",
       }}
     >
       <Box
