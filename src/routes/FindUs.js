@@ -14,7 +14,7 @@ const FindUs = () => {
           background: "pink",
           minHeight: "100vh",
           padding: "1rem",
-          paddingRight: "15rem",
+          paddingRight: "17rem",
           flex: 1,
         }}
       >
