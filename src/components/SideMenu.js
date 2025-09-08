@@ -1,9 +1,10 @@
 import { Box, Button, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
-import EmailIcon from "@mui/icons-material/Email";
 import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import MenuIcon from "@mui/icons-material/Menu";
+import ClearIcon from "@mui/icons-material/Clear";
 import StyledLink from "./StyledLink";
 
 const SideMenu = () => {
@@ -40,14 +41,25 @@ const SideMenu = () => {
       {!isDesktop && (
         <Button
           onClick={toggleSideNav}
+          disableRipple
           sx={{
+            all: "unset",
             position: "fixed",
-            right: "0",
-            top: "0",
+            right: "1rem",
+            top: "0.75rem",
             zIndex: "2",
+            cursor: "pointer",
+            color: "#ffffff",
+            "&:hover": {
+              opacity: "0.6",
+            },
           }}
         >
-          CLICK
+          {showSideNav ? (
+            <ClearIcon sx={{ fontSize: "2.5rem !important" }} />
+          ) : (
+            <MenuIcon sx={{ fontSize: "2.5rem !important" }} />
+          )}
         </Button>
       )}
 
@@ -128,30 +140,6 @@ const SideMenu = () => {
             }}
           >
             <InstagramIcon
-              sx={{
-                color: "#ffffff",
-              }}
-            />
-          </Box>
-          <Box
-            component="a"
-            href="mailto:hello@dockside.ca"
-            sx={{
-              height: "2rem",
-              width: "2rem",
-              display: "flex",
-              justifyContent: "center",
-              alignItems: "center",
-              borderRadius: "50%",
-              textDecoration: "none",
-              color: "inherit",
-              backgroundColor: "transparent",
-              "&:hover": {
-                backgroundColor: "#575555",
-              },
-            }}
-          >
-            <EmailIcon
               sx={{
                 color: "#ffffff",
               }}
