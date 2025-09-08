@@ -2,6 +2,7 @@ import { Box } from "@mui/material";
 import React from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 import SideMenu from "../components/SideMenu";
+import Footer from "../components/Footer";
 
 const Contact = () => {
   const theme = useTheme();
@@ -9,28 +10,31 @@ const Contact = () => {
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
-    <Box
-      sx={{
-        display: "flex",
-      }}
-    >
+    <>
       <Box
         sx={{
-          minHeight: "100vh",
-          padding: isDesktop ? "1rem 17rem 1rem 1rem" : "1rem",
-          flex: 1,
+          display: "flex",
         }}
       >
         <Box
           sx={{
-            background: "orange",
+            minHeight: "100vh",
+            padding: isDesktop ? "1rem 17rem 1rem 1rem" : "1rem",
+            flex: 1,
           }}
         >
-          Contact
+          <Box
+            sx={{
+              background: "orange",
+            }}
+          >
+            Contact
+          </Box>
         </Box>
+        <SideMenu />
       </Box>
-      <SideMenu />
-    </Box>
+      <Footer />
+    </>
   );
 };
 
