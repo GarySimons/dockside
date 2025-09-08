@@ -1,15 +1,21 @@
 import { Typography } from "@mui/material";
+import { useMediaQuery, useTheme } from "@mui/material";
 import React from "react";
 
 const MainLogo = () => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+
   return (
     <Typography
       sx={{
-        fontSize: "3rem",
+        fontSize: isMobile ? "2rem" : "3rem",
         position: "absolute",
-        top: "1.5rem",
+        top: isMobile ? "2.5rem" : "1.5rem",
         left: "2rem",
         fontWeight: "900",
+        letterSpacing: "0.05rem",
       }}
     >
       Dockside

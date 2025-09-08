@@ -21,7 +21,9 @@ const Home = () => {
         <Box
           sx={{
             height: "100vh",
-            padding: isDesktop ? "1rem 17rem 1rem 1rem" : "1rem",
+            padding: isDesktop
+              ? "4.25rem 18rem 2rem 2rem"
+              : "5.5rem 2rem 2rem 2rem",
             flex: 1,
           }}
         >

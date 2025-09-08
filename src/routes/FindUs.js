@@ -3,6 +3,7 @@ import React from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
+import MainLogo from "../components/MainLogo";
 
 const FindUs = () => {
   const theme = useTheme();
@@ -16,10 +17,13 @@ const FindUs = () => {
           display: "flex",
         }}
       >
+        <MainLogo />
         <Box
           sx={{
             minHeight: "100vh",
-            padding: isDesktop ? "1rem 17rem 1rem 1rem" : "1rem",
+            padding: isDesktop
+              ? "4.25rem 18rem 2rem 2rem"
+              : "5.5rem 2rem 2rem 2rem",
             flex: 1,
           }}
         >
