@@ -3,6 +3,7 @@ import React from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
+import MainLogo from "../components/MainLogo";
 
 const Home = () => {
   const theme = useTheme();
@@ -16,6 +17,7 @@ const Home = () => {
           display: "flex",
         }}
       >
+        <MainLogo />
         <Box
           sx={{
             height: "100vh",

@@ -16,7 +16,7 @@ const Footer = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        gap: "2rem",
+        gap: "0.35rem",
         padding: isDesktop ? "1rem 17rem 1rem 1rem" : "1rem",
       }}
     >
@@ -26,7 +26,7 @@ const Footer = () => {
         }}
       >
         design&nbsp;&nbsp;|&nbsp;&nbsp;build&nbsp;&nbsp;|&nbsp;&nbsp;&copy;
-        copyright {currentYear}
+        copyright {currentYear}:{" "}
       </Typography>
       <a
         href="https://www.garysimons.co.uk/"

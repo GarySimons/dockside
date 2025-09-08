@@ -49,7 +49,6 @@ const SideMenu = () => {
             top: "0.75rem",
             zIndex: "2",
             cursor: "pointer",
-            color: "#ffffff",
             "&:hover": {
               opacity: "0.6",
             },
@@ -113,11 +112,7 @@ const SideMenu = () => {
               },
             }}
           >
-            <FacebookIcon
-              sx={{
-                color: "#ffffff",
-              }}
-            />
+            <FacebookIcon />
           </Box>
           <Box
             component="a"
@@ -139,11 +134,7 @@ const SideMenu = () => {
               },
             }}
           >
-            <InstagramIcon
-              sx={{
-                color: "#ffffff",
-              }}
-            />
+            <InstagramIcon />
           </Box>
         </Box>
         <Typography
@@ -151,7 +142,6 @@ const SideMenu = () => {
             color: "#ffffff",
             fontSize: "0.75rem",
             fontHeight: "1.4",
-            fontFamily: "Google Sans Code",
             fontWeight: "300",
           }}
         >
