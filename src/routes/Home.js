@@ -11,6 +11,10 @@ const Home = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
+  const openBookingDialog = () => {
+    console.log("open booking dialog");
+  };
+
   return (
     <>
       <Box
@@ -94,11 +98,13 @@ const Home = () => {
               >
                 Lunch + Dinner
                 <br />
-                Tues - Sat 11pm - 10pm
+                Tues - Sat 11am - 10pm
                 <br />
                 Sun 11am - 8pm
               </Typography>
               <Button
+                disableRipple
+                onClick={openBookingDialog}
                 sx={{
                   all: "unset",
                   fontSize: "1.2rem",

@@ -16,7 +16,7 @@ const StyledLink = ({ to, children }) => {
     >
       <Typography
         sx={{
-          color: isActive ? "#ff4081" : "#ffffff",
+          color: isActive ? "#70bbd3" : "#ffffff",
           fontSize: "1.3rem",
           textDecoration: "none",
           fontWeight: "500",
