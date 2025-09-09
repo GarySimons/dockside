@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import "./i18n";
 import Home from "./routes/Home";
 import Menus from "./routes/Menus";
 import Events from "./routes/Events";

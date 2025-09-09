@@ -6,11 +6,14 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import MenuIcon from "@mui/icons-material/Menu";
 import ClearIcon from "@mui/icons-material/Clear";
 import StyledLink from "./StyledLink";
+import LanguageSwitcher from "./LanguageSwitcher";
+import { useTranslation } from "react-i18next";
 
 const SideMenu = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  const { t } = useTranslation();
 
   useEffect(() => {
     setShowSideNav(isDesktop);
@@ -70,13 +73,14 @@ const SideMenu = () => {
           padding: "2rem 1rem",
         }}
       >
-        <StyledLink to="/">Home</StyledLink>
-        <StyledLink to="/menus">Menus</StyledLink>
+        <StyledLink to="/">{t("Home")}</StyledLink>
+        <StyledLink to="/menus">{t("Menus")}</StyledLink>
         <StyledLink to="/events">Events</StyledLink>
         <StyledLink to="/whats-on">What's On</StyledLink>
         <StyledLink to="/contact">Contact</StyledLink>
         <StyledLink to="/find-us">Find Us</StyledLink>
       </Box>
+
       <Box
         sx={{
           display: "flex",
@@ -85,6 +89,17 @@ const SideMenu = () => {
           padding: "1rem",
         }}
       >
+        {" "}
+        <Box
+          sx={{
+            margin: "0 0 1rem 0",
+            padding: "0 0 0.75rem 0",
+            width: "40%",
+            borderBottom: "1px solid",
+          }}
+        >
+          <LanguageSwitcher />
+        </Box>
         <Box
           sx={{
             display: "flex",
