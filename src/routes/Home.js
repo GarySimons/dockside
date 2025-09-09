@@ -1,9 +1,10 @@
-import { Box } from "@mui/material";
+import { Box, Button, Typography } from "@mui/material";
 import React from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
 import MainLogo from "../components/MainLogo";
+import docksideImageHome from "../assets/images/dockside-home.jpg";
 
 const Home = () => {
   const theme = useTheme();
@@ -20,7 +21,7 @@ const Home = () => {
         <MainLogo />
         <Box
           sx={{
-            height: "100vh",
+            minHeight: "100vh",
             padding: isDesktop
               ? "4.25rem 18rem 2rem 2rem"
               : "5.5rem 2rem 2rem 2rem",
@@ -29,10 +30,85 @@ const Home = () => {
         >
           <Box
             sx={{
-              background: "orange",
+              width: "100",
+              height: "80vh",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              overflow: "hidden",
+              position: "relative",
+              backgroundColor: "pink",
             }}
           >
-            Home
+            <img
+              src={docksideImageHome}
+              alt="Dockside"
+              style={{ width: "100%", height: "100%", objectFit: "cover" }}
+            />
+            <Typography
+              sx={{
+                fontSize: "1.7rem",
+                fontWeight: "600",
+                lineHeight: "1.2",
+                position: "absolute",
+                left: "0",
+                top: "1.4rem",
+              }}
+            >
+              Sensational Seafood <br /> and Sea views
+            </Typography>
+          </Box>
+          <Box
+            sx={{
+              display: "flex",
+              gap: "2rem",
+              margin: "1rem 0 2rem 0",
+            }}
+          >
+            <Typography
+              sx={{
+                flex: "2",
+                fontSize: "1.4rem",
+              }}
+            >
+              Take in the stunning views over the water. Enjoy laidback lunches,
+              long afternoons and nights to remember
+            </Typography>
+            <Box
+              sx={{
+                flex: "1",
+                textAlign: "right",
+              }}
+            >
+              <Typography
+                sx={{
+                  fontSize: "1.2rem",
+                }}
+              >
+                Opening Times
+              </Typography>
+              <Typography
+                sx={{
+                  fontSize: "0.8rem",
+                }}
+              >
+                Lunch + Dinner
+                <br />
+                Tues - Sat 11pm - 10pm
+                <br />
+                Sun 11am - 8pm
+              </Typography>
+              <Button
+                sx={{
+                  all: "unset",
+                  fontSize: "1.2rem",
+                  marginTop: "2rem",
+                  textDecoration: "underline",
+                }}
+              >
+                Make a reservation
+              </Button>
+            </Box>
           </Box>
         </Box>
         <SideMenu />

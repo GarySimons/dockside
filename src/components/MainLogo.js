@@ -16,6 +16,7 @@ const MainLogo = () => {
         left: "2rem",
         fontWeight: "900",
         letterSpacing: "0.05rem",
+        zIndex: "1",
       }}
     >
       Dockside
