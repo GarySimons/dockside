@@ -37,13 +37,12 @@ const Home = () => {
           <Box
             sx={{
               width: "100",
-              height: "80vh",
+              height: isMobile ? "65vh" : "80vh",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               overflow: "hidden",
               position: "relative",
-              backgroundColor: "pink",
             }}
           >
             <img
@@ -68,7 +67,8 @@ const Home = () => {
           <Box
             sx={{
               display: "flex",
-              gap: "8rem",
+              flexDirection: isMobile ? "column" : "row",
+              gap: isDesktop ? "8rem" : "3rem",
               margin: "1rem 0 2rem 0",
             }}
           >
