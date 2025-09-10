@@ -1,20 +1,26 @@
 import { Box, Button, Typography } from "@mui/material";
-import React from "react";
+import React, { useState } from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
 import MainLogo from "../components/MainLogo";
 import { useTranslation } from "react-i18next";
 import docksideImageHome from "../assets/images/dockside-home.jpg";
+import ReservationDialog from "../components/ReservationDialog";
 
 const Home = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
   const { t } = useTranslation();
+  const [openDialog, setOpenDialog] = useState(false);
 
-  const openBookingDialog = () => {
-    console.log("open booking dialog");
+  const handleOpen = () => {
+    setOpenDialog(true);
+  };
+
+  const handleClose = () => {
+    setOpenDialog(false);
   };
 
   return (
@@ -24,6 +30,7 @@ const Home = () => {
           display: "flex",
         }}
       >
+        <ReservationDialog open={openDialog} onClose={handleClose} />
         <MainLogo />
         <Box
           sx={{
@@ -108,7 +115,7 @@ const Home = () => {
               </Typography>
               <Button
                 disableRipple
-                onClick={openBookingDialog}
+                onClick={handleOpen}
                 sx={{
                   all: "unset",
                   fontSize: "1.2rem",

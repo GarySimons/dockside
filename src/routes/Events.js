@@ -5,6 +5,7 @@ import Footer from "../components/Footer";
 import MainLogo from "../components/MainLogo";
 import { useTranslation } from "react-i18next";
 import docksideImageEvents from "../assets/images/dockside-events.jpg";
+import ReservationForm from "../components/ReservationForm";
 
 const Events = () => {
   const theme = useTheme();
@@ -80,8 +81,8 @@ const Events = () => {
                   lineHeight: "1.3",
                 }}
               >
-                We would love to create a memorable experience for your next
-                celebratory occasion at Docksie, including:
+                At Dockside we would love to create a memorable experience for
+                your next celebratory occasion, including:
               </Typography>
               <Typography
                 sx={{
@@ -124,6 +125,15 @@ const Events = () => {
                 form.
               </Typography>
             </Box>
+          </Box>
+          <Box
+            sx={{
+              backgroundColor: "orange",
+              width: "100",
+              padding: "1rem",
+            }}
+          >
+            <ReservationForm />
           </Box>
         </Box>
         <SideMenu />
