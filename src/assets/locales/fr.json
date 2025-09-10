@@ -1,4 +1,8 @@
 {
+  "design": "conception",
+  "build": "développer",
+  "copyright": "droit d'auteur",
+
   "Home": "Accueil",
   "Menus": "Menus",
   "Events": "Événements",

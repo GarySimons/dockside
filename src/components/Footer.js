@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import React from "react";
+import { useTranslation } from "react-i18next";
 import { useMediaQuery, useTheme } from "@mui/material";
 
 const Footer = () => {
@@ -7,6 +8,7 @@ const Footer = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  const { t } = useTranslation();
 
   return (
     <Box
@@ -25,8 +27,9 @@ const Footer = () => {
           fontSize: "0.7rem",
         }}
       >
-        design&nbsp;&nbsp;|&nbsp;&nbsp;build&nbsp;&nbsp;|&nbsp;&nbsp;&copy;
-        copyright {currentYear}:{" "}
+        {t("design")}
+        &nbsp;&nbsp;|&nbsp;&nbsp;{t("build")}&nbsp;&nbsp;|&nbsp;&nbsp;&copy;
+        {t("copyright")} {currentYear}:{" "}
       </Typography>
       <a
         href="https://www.garysimons.co.uk/"

@@ -1,4 +1,8 @@
 {
+  "design": "design",
+  "build": "build",
+  "copyright": "copyright",
+
   "Home": "Home",
   "Menus": "Menus",
   "Events": "Events",
