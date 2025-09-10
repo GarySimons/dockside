@@ -128,9 +128,9 @@ const Events = () => {
           </Box>
           <Box
             sx={{
-              backgroundColor: "orange",
+              backgroundColor: "#d6f5ff",
               width: "100",
-              padding: "1rem",
+              padding: "1rem 1rem 1.5rem 1rem",
             }}
           >
             <ReservationForm />
