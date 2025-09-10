@@ -1,4 +1,16 @@
 {
   "Home": "Accueil",
-  "Menus": "Menus"
+  "Menus": "Menus",
+  "Events": "Événements",
+  "What's On": "Agenda",
+  "Contact": "Coordonnées",
+  "Find Us": "Comment nous trouver",
+
+  "Sensational seafood and breathtaking sea views": "Fruits de mer sensationnels et vues imprenables sur la mer",
+  "Take in the stunning views over the water. Enjoy laidback lunches, long afternoons and nights to remember": "Admirez la vue imprenable sur l'eau. Savourez des déjeuners détendus, des après-midis qui s'étirent et des soirées inoubliables.",
+  "Opening Times": "Horaires d'ouverture",
+  "Lunch + Dinner": "Déjeuner + Dîner",
+  "Tues - Sat 11am - 10pm": "Mardi - Samedi : 11h00 - 22h00",
+  "Sun 11am - 8pm": "Dimanche : 11h00 - 20h00",
+  "Make a reservation": "Faire une réservation"
 }

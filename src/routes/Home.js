@@ -4,12 +4,14 @@ import { useMediaQuery, useTheme } from "@mui/material";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
 import MainLogo from "../components/MainLogo";
+import { useTranslation } from "react-i18next";
 import docksideImageHome from "../assets/images/dockside-home.jpg";
 
 const Home = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  const { t } = useTranslation();
 
   const openBookingDialog = () => {
     console.log("open booking dialog");
@@ -57,15 +59,16 @@ const Home = () => {
                 position: "absolute",
                 left: "0",
                 top: "1.4rem",
+                maxWidth: "24rem",
               }}
             >
-              Sensational Seafood <br /> and Sea views
+              {t("Sensational seafood and breathtaking sea views")}
             </Typography>
           </Box>
           <Box
             sx={{
               display: "flex",
-              gap: "2rem",
+              gap: "8rem",
               margin: "1rem 0 2rem 0",
             }}
           >
@@ -75,8 +78,9 @@ const Home = () => {
                 fontSize: "1.4rem",
               }}
             >
-              Take in the stunning views over the water. Enjoy laidback lunches,
-              long afternoons and nights to remember
+              {t(
+                "Take in the stunning views over the water. Enjoy laidback lunches, long afternoons and nights to remember"
+              )}
             </Typography>
             <Box
               sx={{
@@ -89,18 +93,18 @@ const Home = () => {
                   fontSize: "1.2rem",
                 }}
               >
-                Opening Times
+                {t("Opening Times")}
               </Typography>
               <Typography
                 sx={{
                   fontSize: "0.8rem",
                 }}
               >
-                Lunch + Dinner
+                {t("Lunch + Dinner")}
                 <br />
-                Tues - Sat 11am - 10pm
+                {t("Tues - Sat 11am - 10pm")}
                 <br />
-                Sun 11am - 8pm
+                {t("Sun 11am - 8pm")}
               </Typography>
               <Button
                 disableRipple
@@ -112,7 +116,7 @@ const Home = () => {
                   textDecoration: "underline",
                 }}
               >
-                Make a reservation
+                {t("Make a reservation")}
               </Button>
             </Box>
           </Box>

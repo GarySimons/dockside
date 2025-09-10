@@ -75,10 +75,10 @@ const SideMenu = () => {
       >
         <StyledLink to="/">{t("Home")}</StyledLink>
         <StyledLink to="/menus">{t("Menus")}</StyledLink>
-        <StyledLink to="/events">Events</StyledLink>
-        <StyledLink to="/whats-on">What's On</StyledLink>
-        <StyledLink to="/contact">Contact</StyledLink>
-        <StyledLink to="/find-us">Find Us</StyledLink>
+        <StyledLink to="/events">{t("Events")}</StyledLink>
+        <StyledLink to="/whats-on">{t("What's On")}</StyledLink>
+        <StyledLink to="/contact">{t("Contact")}</StyledLink>
+        <StyledLink to="/find-us">{t("Find Us")}</StyledLink>
       </Box>
 
       <Box
