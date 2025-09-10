@@ -55,10 +55,9 @@ const Events = () => {
                 position: "absolute",
                 left: "0",
                 top: "1.4rem",
-                maxWidth: "24rem",
               }}
             >
-              Events & Functions
+              {t("Events & Functions")}
             </Typography>
             <Box
               sx={{
@@ -81,8 +80,9 @@ const Events = () => {
                   lineHeight: "1.3",
                 }}
               >
-                At Dockside we would love to create a memorable experience for
-                your next celebratory occasion, including:
+                {t(
+                  "At Dockside we would love to create a memorable experience for your next celebratory occasion, including:"
+                )}
               </Typography>
               <Typography
                 sx={{
@@ -91,17 +91,12 @@ const Events = () => {
                   lineHeight: "1.3",
                 }}
               >
-                + Wedding Receptions
-                <br />
-                + Birthdays
-                <br />
-                + Corporate Events
-                <br />
-                + Christmas Parties
-                <br />
-                + Bridal Showers
-                <br />
-                + Christenings
+                + {t("Wedding Receptions")}
+                <br />+ {t("Birthdays")}
+                <br />+ {t("Corporate Events")}
+                <br />+ {t("Christmas Parties")}
+                <br />+ {t("Bridal Showers")}
+                <br />+ {t("Christenings")}
                 <br />
               </Typography>
               <Typography
@@ -111,8 +106,9 @@ const Events = () => {
                   lineHeight: "1.3",
                 }}
               >
-                Our capacity is up to 80 seated guests or 120 for a standing
-                function.
+                {t(
+                  "Our capacity is up to 80 seated guests or 120 for a standing function."
+                )}
               </Typography>
               <Typography
                 sx={{
@@ -121,8 +117,9 @@ const Events = () => {
                   lineHeight: "1.3",
                 }}
               >
-                For more information on events at Dockside, simply complete the
-                form.
+                {t(
+                  "For more information on events at Dockside, simply complete the form."
+                )}
               </Typography>
             </Box>
           </Box>
