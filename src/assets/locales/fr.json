@@ -17,13 +17,14 @@
   "Tues - Sat 11am - 10pm": "Mardi - Samedi : 11h00 - 22h00",
   "Sun 11am - 8pm": "Dimanche : 11h00 - 20h00",
   "Make a reservation": "Faire une réservation",
+  "Reservations": "Réservations",
 
   "Name": "Nom",
   "Email": "Courriel",
   "Phone Number": "Numéro de Téléphone",
-  "Party Size": "Nombre de personnes",
+  "Party Size": "Nombre de Personnes",
   "Select Date": "Sélectionner une Date",
-  "Select Time": "Sélectionner une heure",
+  "Select Time": "Sélectionner une Heure",
   "Extra Comments": "Commentaires Supplémentaires",
   "Submit Request": "Envoyer la Demande",
 
@@ -36,5 +37,5 @@
   "Bridal Showers": "Fêtes Prénuptiales",
   "Christenings": "Baptêmes",
   "Our capacity is up to 80 seated guests or 120 for a standing function.": "Notre capacité est de 80 invités assis ou 120 pour une réception debout.",
-  "For more information on events at Dockside, simply complete the form.": "Pour plus d’informations sur les événements chez Dockside, il vous suffit de remplir le formulaire."
+  "For more information on events at Dockside, simply complete the form.": "Pour plus d'informations sur les événements chez Dockside, il vous suffit de remplir le formulaire."
 }

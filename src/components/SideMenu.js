@@ -8,12 +8,22 @@ import ClearIcon from "@mui/icons-material/Clear";
 import StyledLink from "./StyledLink";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import ReservationDialog from "./ReservationDialog";
 
 const SideMenu = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
   const { t } = useTranslation();
+  const [openDialog, setOpenDialog] = useState(false);
+
+  const handleOpen = () => {
+    setOpenDialog(true);
+  };
+
+  const handleClose = () => {
+    setOpenDialog(false);
+  };
 
   useEffect(() => {
     setShowSideNav(isDesktop);
@@ -41,6 +51,8 @@ const SideMenu = () => {
         transition: "right 0.3s ease-in-out",
       }}
     >
+      <ReservationDialog open={openDialog} onClose={handleClose} />
+
       {!isDesktop && (
         <Button
           onClick={toggleSideNav}
@@ -94,7 +106,7 @@ const SideMenu = () => {
           sx={{
             margin: "0 0 1rem 0",
             padding: "0 0 0.75rem 0",
-            width: "40%",
+            width: "3.4rem",
             borderBottom: "1px solid",
           }}
         >
@@ -146,6 +158,23 @@ const SideMenu = () => {
             <InstagramIcon />
           </Box>
         </Box>
+        <Typography
+          onClick={handleOpen}
+          sx={{
+            color: "#ffffff",
+            fontSize: "0.8rem",
+            textDecoration: "none",
+            fontWeight: "700",
+            cursor: "pointer",
+            marginBottom: "0.5rem",
+            textDecoration: "underline",
+            "&:hover": {
+              opacity: 0.6,
+            },
+          }}
+        >
+          {t("Make a reservation")}
+        </Typography>
         <Typography
           sx={{
             color: "#ffffff",
