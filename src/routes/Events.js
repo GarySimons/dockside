@@ -130,7 +130,7 @@ const Events = () => {
             sx={{
               backgroundColor: "#d6f5ff",
               width: "100",
-              padding: "1rem 1rem 1.5rem 1rem",
+              padding: "0.5rem 1rem 1.5rem 1rem",
             }}
           >
             <ReservationForm />

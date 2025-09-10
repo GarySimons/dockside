@@ -1,12 +1,5 @@
 import React, { useState } from "react";
-import {
-  TextField,
-  Button,
-  Grid,
-  Box,
-  Typography,
-  createTheme,
-} from "@mui/material";
+import { TextField, Button, Box } from "@mui/material";
 import {
   DatePicker,
   TimePicker,
@@ -98,7 +91,7 @@ const ReservationForm = () => {
                 color: "grey",
               },
             }}
-            label="Name"
+            label={t("Name")}
             name="name"
             fullWidth
             value={formData.name}
@@ -124,7 +117,7 @@ const ReservationForm = () => {
                 color: "grey",
               },
             }}
-            label="Email"
+            label={t("Email")}
             name="email"
             type="email"
             fullWidth
@@ -151,7 +144,7 @@ const ReservationForm = () => {
                 color: "grey",
               },
             }}
-            label="Phone Number"
+            label={t("Phone Number")}
             name="phone"
             type="tel"
             fullWidth
@@ -184,7 +177,7 @@ const ReservationForm = () => {
                 color: "grey",
               },
             }}
-            label="Party Size"
+            label={t("Party Size")}
             name="partySize"
             type="number"
             fullWidth
@@ -209,7 +202,7 @@ const ReservationForm = () => {
                 color: "grey",
               },
             }}
-            label="Select Date"
+            label={t("Select Date")}
             value={formData.date}
             onChange={handleDateChange}
             minDate={dayjs()}
@@ -235,7 +228,7 @@ const ReservationForm = () => {
                 color: "grey",
               },
             }}
-            label="Select Time"
+            label={t("Select Time")}
             value={formData.time}
             onChange={handleTimeChange}
             renderInput={(params) => (
@@ -268,7 +261,7 @@ const ReservationForm = () => {
                 color: "grey",
               },
             }}
-            label="Extra Comments"
+            label={t("Extra Comments")}
             name="comments"
             multiline
             rows={4}
@@ -296,7 +289,7 @@ const ReservationForm = () => {
             },
           }}
         >
-          Submit Request
+          {t("Submit Request")}
         </Button>
       </Box>
     </LocalizationProvider>

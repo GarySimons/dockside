@@ -16,5 +16,14 @@
   "Lunch + Dinner": "Lunch + Dinner",
   "Tues - Sat 11am - 10pm": "Tues - Sat 11am - 10pm",
   "Sun 11am - 8pm": "Sun 11am - 8pm",
-  "Make a reservation": "Make a reservation"
+  "Make a reservation": "Make a reservation",
+
+  "Name": "Name",
+  "Email": "Email",
+  "Phone Number": "Phone Number",
+  "Party Size": "Party Size",
+  "Select Date": "Select Date",
+  "Select Time": "Select Time",
+  "Extra Comments": "Extra Comments",
+  "Submit Request": "Submit Request"
 }

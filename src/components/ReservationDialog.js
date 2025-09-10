@@ -9,8 +9,11 @@ import {
 } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import ReservationForm from "./ReservationForm";
+import { useTranslation } from "react-i18next";
 
 const ReservationDialog = ({ open, onClose }) => {
+  const { t } = useTranslation();
+
   return (
     <Dialog
       open={open}
@@ -27,7 +30,7 @@ const ReservationDialog = ({ open, onClose }) => {
           alignItems: "center",
         }}
       >
-        Make a Reservation
+        {t("Make a reservation")}
         <CloseIcon
           onClick={onClose}
           sx={{
@@ -39,14 +42,8 @@ const ReservationDialog = ({ open, onClose }) => {
         />
       </DialogTitle>
       <DialogContent>
-        {/* <DialogContentText>
-          This is a simple dialog opened from a separate button.
-        </DialogContentText> */}
         <ReservationForm />
       </DialogContent>
-      {/* <DialogActions>
-        <Button onClick={onClose}>Cancel</Button>
-      </DialogActions> */}
     </Dialog>
   );
 };

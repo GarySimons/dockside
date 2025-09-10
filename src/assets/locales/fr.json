@@ -16,5 +16,14 @@
   "Lunch + Dinner": "Déjeuner + Dîner",
   "Tues - Sat 11am - 10pm": "Mardi - Samedi : 11h00 - 22h00",
   "Sun 11am - 8pm": "Dimanche : 11h00 - 20h00",
-  "Make a reservation": "Faire une réservation"
+  "Make a reservation": "Faire une réservation",
+
+  "Name": "Nom",
+  "Email": "Courriel",
+  "Phone Number": "Numéro de Téléphone",
+  "Party Size": "Nombre de personnes",
+  "Select Date": "Sélectionner une Date",
+  "Select Time": "Sélectionner une heure",
+  "Extra Comments": "Commentaires Supplémentaires",
+  "Submit Request": "Envoyer la Demande"
 }
