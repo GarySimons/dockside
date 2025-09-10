@@ -103,7 +103,7 @@ const SideMenu = () => {
         <Box
           sx={{
             display: "flex",
-            gap: "0.5rem",
+            gap: "0.55rem",
             marginBottom: "0.5rem",
           }}
         >
@@ -113,17 +113,14 @@ const SideMenu = () => {
             target="_blank"
             rel="noopener noreferrer"
             sx={{
-              height: "2rem",
-              width: "2rem",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
               textDecoration: "none",
-              borderRadius: "50%",
               color: "inherit",
               backgroundColor: "transparent",
               "&:hover": {
-                backgroundColor: "#575555",
+                opacity: "0.6",
               },
             }}
           >
@@ -135,17 +132,14 @@ const SideMenu = () => {
             target="_blank"
             rel="noopener noreferrer"
             sx={{
-              height: "2rem",
-              width: "2rem",
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
-              borderRadius: "50%",
               textDecoration: "none",
               color: "inherit",
               backgroundColor: "transparent",
               "&:hover": {
-                backgroundColor: "#575555",
+                opacity: "0.6",
               },
             }}
           >
