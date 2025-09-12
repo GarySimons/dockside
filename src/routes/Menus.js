@@ -71,31 +71,44 @@ const Menus = () => {
               height: "20rem",
             }}
           ></Box>
-          <Box sx={{ width: "100%", backgroundColor: "olivedrab" }}>
+          <Box sx={{ backgroundColor: "olivedrab", width: "100%" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-              <Tabs
-                value={value}
-                onChange={handleChange}
-                aria-label="basic tabs example"
-              >
-                <Tab label="Item One" {...a11yProps(0)} />
-                <Tab label="Item Two" {...a11yProps(1)} />
-                <Tab label="Item Three" {...a11yProps(2)} />
-              </Tabs>
+              <Box sx={{ display: "flex", justifyContent: "center" }}>
+                <Tabs
+                  value={value}
+                  onChange={handleChange}
+                  aria-label="basic tabs example"
+                >
+                  <Tab label="Item One" {...a11yProps(0)} />
+                  <Tab label="Item Two" {...a11yProps(1)} />
+                  <Tab label="Item Three" {...a11yProps(2)} />
+                  <Tab label="Item Four" {...a11yProps(3)} />
+                  <Tab label="Item Five" {...a11yProps(4)} />
+                </Tabs>
+              </Box>
             </Box>
-            <CustomTabPanel value={value} index={0}>
-              Item One
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={1}>
-              Item Two
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={2}>
-              Item Three
-            </CustomTabPanel>
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
+              <CustomTabPanel value={value} index={0}>
+                Item One
+              </CustomTabPanel>
+              <CustomTabPanel value={value} index={1}>
+                Item Two
+              </CustomTabPanel>
+              <CustomTabPanel value={value} index={2}>
+                Item Three
+              </CustomTabPanel>
+              <CustomTabPanel value={value} index={3}>
+                Item Four
+              </CustomTabPanel>
+              <CustomTabPanel value={value} index={4}>
+                Item Five
+              </CustomTabPanel>
+            </Box>
           </Box>
         </Box>
-        <SideMenu />
       </Box>
+      <SideMenu />
+
       <Footer />
     </>
   );
