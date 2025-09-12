@@ -1,0 +1,27 @@
+[
+  {
+    "name": "dish 1",
+    "description": "this is dish one. Yum",
+    "price": "21"
+  },
+  {
+    "name": "dish 2",
+    "description": "this is dish two. Yum",
+    "price": "22"
+  },
+  {
+    "name": "dish 3",
+    "description": "this is dish three. Yum",
+    "price": "23"
+  },
+  {
+    "name": "dish 4",
+    "description": "this is dish four. Yum",
+    "price": "24"
+  },
+  {
+    "name": "dish 5",
+    "description": "this is dish five. Yum",
+    "price": "25"
+  }
+]
