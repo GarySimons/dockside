@@ -94,7 +94,7 @@ const Menus = () => {
                 position: "absolute",
                 left: "0",
                 top: "1.4rem",
-                zIndex: "7",
+                zIndex: "3",
               }}
             >
               {t("Menus")}
@@ -109,6 +109,7 @@ const Menus = () => {
                   alignItems: "center",
                   overflow: "hidden",
                   position: "relative",
+                  padding: "0",
                 }}
               >
                 <img
