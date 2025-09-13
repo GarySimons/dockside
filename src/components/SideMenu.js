@@ -39,7 +39,7 @@ const SideMenu = () => {
     <Box
       sx={{
         width: "16rem",
-        height: "100vh",
+        height: "100%",
         position: "fixed",
         right: isDesktop ? "0" : showSideNav ? "0" : "-16rem",
         top: "0",

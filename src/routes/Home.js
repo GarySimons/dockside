@@ -64,7 +64,7 @@ const Home = () => {
                 lineHeight: "1.2",
                 position: "absolute",
                 left: "0",
-                top: "1.4rem",
+                top: isDesktop ? "1rem" : "0.4rem",
                 maxWidth: "24rem",
               }}
             >
