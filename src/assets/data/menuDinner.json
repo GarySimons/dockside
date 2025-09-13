@@ -1,0 +1,52 @@
+[
+  {
+    "name": "Lobster Spagetti",
+    "description": "half butter poached lobster, fresh squid ink pasta, fresh herbs, roasted lobster sauce",
+    "price": "62"
+  },
+  {
+    "name": "Atlantic Halibut",
+    "description": "green asparagus, confit potato, pickled vegetables, wild leek hollandaise",
+    "price": "58"
+  },
+  {
+    "name": "",
+    "description": "",
+    "price": ""
+  },
+  {
+    "name": "",
+    "description": "",
+    "price": ""
+  },
+  {
+    "name": "",
+    "description": "",
+    "price": ""
+  },
+  {
+    "name": "",
+    "description": "",
+    "price": ""
+  },
+  {
+    "name": "",
+    "description": "",
+    "price": ""
+  },
+  {
+    "name": "",
+    "description": "",
+    "price": ""
+  },
+  {
+    "name": "",
+    "description": "",
+    "price": ""
+  },
+  {
+    "name": "",
+    "description": "",
+    "price": ""
+  }
+]

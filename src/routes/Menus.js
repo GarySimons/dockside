@@ -1,6 +1,7 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
+import { useTranslation } from "react-i18next";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
 import MainLogo from "../components/MainLogo";
@@ -8,8 +9,14 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import MenuSection from "../components/MenuSelection";
+import docksideImageStater from "../assets/images/dockside-starter.jpg";
+import docksideImageLunch from "../assets/images/dockside-lunch.jpg";
+import docksideImageDinner from "../assets/images/dockside-dinner.jpg";
+import docksideImageDessert from "../assets/images/dockside-dessert.jpg";
+import starterData from "../assets/data/menuStarter.json";
 import lunchData from "../assets/data/menuLunch.json";
-import starterData from "../assets/data/menuStarters.json";
+import dinnerData from "../assets/data/menuDinner.json";
+import dessertData from "../assets/data/menuDessert.json";
 
 function CustomTabPanel(props) {
   const { children, value, index, ...other } = props;
@@ -44,6 +51,7 @@ const Menus = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  const { t } = useTranslation();
 
   const [value, setValue] = React.useState(0);
 
@@ -56,9 +64,11 @@ const Menus = () => {
       <Box
         sx={{
           display: "flex",
+          position: "relative",
         }}
       >
         <MainLogo />
+
         <Box
           sx={{
             minHeight: "100vh",
@@ -70,21 +80,100 @@ const Menus = () => {
         >
           <Box
             sx={{
-              background: "orange",
-              height: "20rem",
+              padding: "0",
+              marginBottom: "1rem",
+              position: "relative",
             }}
           >
+            {" "}
+            <Typography
+              sx={{
+                fontSize: "2.2rem",
+                fontWeight: "600",
+                lineHeight: "1.2",
+                position: "absolute",
+                left: "0",
+                top: "1.4rem",
+                zIndex: "7",
+              }}
+            >
+              {t("Menus")}
+            </Typography>
             <CustomTabPanel value={value} index={0}>
-              Image One
+              <Box
+                sx={{
+                  width: "100",
+                  height: "30vh",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  overflow: "hidden",
+                  position: "relative",
+                }}
+              >
+                <img
+                  src={docksideImageStater}
+                  alt="Starter"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </Box>
             </CustomTabPanel>
             <CustomTabPanel value={value} index={1}>
-              Image Two
+              <Box
+                sx={{
+                  width: "100",
+                  height: "30vh",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  overflow: "hidden",
+                  position: "relative",
+                }}
+              >
+                <img
+                  src={docksideImageLunch}
+                  alt="Lunch"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </Box>
             </CustomTabPanel>
             <CustomTabPanel value={value} index={2}>
-              Image Three
+              <Box
+                sx={{
+                  width: "100",
+                  height: "30vh",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  overflow: "hidden",
+                  position: "relative",
+                }}
+              >
+                <img
+                  src={docksideImageDinner}
+                  alt="Dinner"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </Box>
             </CustomTabPanel>
             <CustomTabPanel value={value} index={3}>
-              Image Four
+              <Box
+                sx={{
+                  width: "100",
+                  height: "30vh",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  overflow: "hidden",
+                  position: "relative",
+                }}
+              >
+                <img
+                  src={docksideImageDessert}
+                  alt="Dessert"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </Box>
             </CustomTabPanel>
           </Box>
           <Box sx={{ width: "100%" }}>
@@ -95,25 +184,25 @@ const Menus = () => {
                   onChange={handleChange}
                   aria-label="basic tabs example"
                 >
-                  <Tab label="to start" {...a11yProps(0)} />
-                  <Tab label="Lunch" {...a11yProps(1)} />
-                  <Tab label="Dinner" {...a11yProps(2)} />
-                  <Tab label="Desserts" {...a11yProps(3)} />
+                  <Tab label={t("Starters")} {...a11yProps(0)} />
+                  <Tab label={t("Lunch")} {...a11yProps(1)} />
+                  <Tab label={t("Dinner")} {...a11yProps(2)} />
+                  <Tab label={t("Desserts")} {...a11yProps(3)} />
                 </Tabs>
               </Box>
             </Box>
             <Box sx={{ display: "flex", justifyContent: "center" }}>
               <CustomTabPanel value={value} index={0}>
-                <MenuSection title={"To Start"} data={starterData} />
+                <MenuSection title={"Starters"} data={starterData} />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={1}>
                 <MenuSection title={"Lunch"} data={lunchData} />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={2}>
-                Dinner
+                <MenuSection title={"Dinner"} data={dinnerData} />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={3}>
-                Desserts
+                <MenuSection title="menu.desserts.title" data={dessertData} />
               </CustomTabPanel>
             </Box>
           </Box>

@@ -1,7 +1,14 @@
 import React from "react";
 import { Box, Typography } from "@mui/material";
+import { useTranslation } from "react-i18next";
+import { useMediaQuery, useTheme } from "@mui/material";
 
 const MenuSection = ({ data = [], title }) => {
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
+  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
+  const { t } = useTranslation();
+
   return (
     <Box
       sx={{

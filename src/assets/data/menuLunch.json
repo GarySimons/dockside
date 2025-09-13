@@ -1,27 +1,32 @@
 [
   {
-    "name": "dish 1",
-    "description": "this is dish one. Yum",
-    "price": "21"
+    "name": "Grilled Branzino",
+    "description": "swiss chard, zucchini crema, sweet drop pepper, pullman loaf crouton, lemon & brown butter sauce",
+    "price": "46"
   },
   {
-    "name": "dish 2",
-    "description": "this is dish two. Yum",
-    "price": "22"
+    "name": "Atlantic Halibut",
+    "description": "green asparagus, confit potato, pickled vegetables, wild leek hollandaise",
+    "price": "58"
   },
   {
-    "name": "dish 3",
-    "description": "this is dish three. Yum",
-    "price": "23"
+    "name": "Ahi Tuna Nicoise",
+    "description": "seared ahi tuna, french beans, soft boiled egg, endive, new potatoes, tonnato, grainy mustard & herb vinaigrette",
+    "price": "44"
   },
   {
-    "name": "dish 4",
-    "description": "this is dish four. Yum",
-    "price": "24"
+    "name": "Miso Glazed Black Cod",
+    "description": "roasted cauliflower & sesame emulsion, steamed greens, chili ponzu dressing, shiitake, lotus chips",
+    "price": "59"
   },
   {
-    "name": "dish 5",
-    "description": "this is dish five. Yum",
-    "price": "25"
+    "name": "Lobster Roll",
+    "description": "East Coast lobster, dill mayo, toasted milk bun, french fries",
+    "price": "46"
+  },
+  {
+    "name": "Cacio e Pepe",
+    "description": "fresh canestri pasta, kampot pepper, pecorino toscano, stracciatella, pickled pine nuts (v)",
+    "price": "36"
   }
 ]

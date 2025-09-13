@@ -1,0 +1,22 @@
+[
+  {
+    "name": "menu.Banana & Toffee Cream Pie",
+    "description": "menu.desserts.banana_pie.description",
+    "price": "menu.desserts.banana_pie.price"
+  },
+  {
+    "name": "menu.desserts.banana_pie.name",
+    "description": "menu.desserts.banana_pie.description",
+    "price": "menu.desserts.banana_pie.price"
+  },
+  {
+    "name": "menu.desserts.banana_pie.name",
+    "description": "menu.desserts.banana_pie.description",
+    "price": "menu.desserts.banana_pie.price"
+  },
+  {
+    "name": "menu.desserts.banana_pie.name",
+    "description": "menu.desserts.banana_pie.description",
+    "price": "menu.desserts.banana_pie.price"
+  }
+]
