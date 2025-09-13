@@ -29,7 +29,7 @@ function CustomTabPanel(props) {
       aria-labelledby={`simple-tab-${index}`}
       {...other}
     >
-      {value === index && <Box sx={{ p: 3 }}>{children}</Box>}
+      {value === index && <Box sx={{ p: 0 }}>{children}</Box>}
     </div>
   );
 }
@@ -178,7 +178,7 @@ const Menus = () => {
             </CustomTabPanel>
           </Box>
           <Box sx={{ width: "100%" }}>
-            <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
+            <Box sx={{}}>
               <Box
                 sx={{
                   display: "flex",
