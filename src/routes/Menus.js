@@ -81,7 +81,7 @@ const Menus = () => {
           <Box
             sx={{
               padding: "0",
-              marginBottom: "1rem",
+              marginBottom: "2rem",
               position: "relative",
             }}
           >
@@ -178,31 +178,117 @@ const Menus = () => {
           </Box>
           <Box sx={{ width: "100%" }}>
             <Box sx={{ borderBottom: 1, borderColor: "divider" }}>
-              <Box sx={{ display: "flex", justifyContent: "center" }}>
+              <Box
+                sx={{
+                  display: "flex",
+                  justifyContent: "center",
+                }}
+              >
                 <Tabs
                   value={value}
                   onChange={handleChange}
-                  aria-label="basic tabs example"
+                  aria-label="Tabs"
+                  textColor="#ffffff"
+                  indicatorColor="#70bbd3"
+                  sx={{
+                    "& .MuiTabs-indicator": {
+                      backgroundColor: "",
+                      height: 3,
+                    },
+                  }}
                 >
-                  <Tab label={t("Starters")} {...a11yProps(0)} />
-                  <Tab label={t("Lunch")} {...a11yProps(1)} />
-                  <Tab label={t("Dinner")} {...a11yProps(2)} />
-                  <Tab label={t("Desserts")} {...a11yProps(3)} />
+                  <Tab
+                    label={t("Starters")}
+                    {...a11yProps(0)}
+                    disableRipple
+                    sx={{
+                      flex: 1,
+                      fontWeight: "600",
+                      fontSize: "1.1rem",
+                      textTransform: "none",
+                      color: " #488599",
+                      borderRight: "0.1rem solid #ffffff",
+                      minHeight: "1rem",
+                      height: "1rem",
+                      "&.Mui-selected": {
+                        color: "#ffffff",
+                      },
+                    }}
+                  />
+                  <Tab
+                    label={t("Lunch")}
+                    {...a11yProps(1)}
+                    disableRipple
+                    sx={{
+                      flex: 1,
+                      fontWeight: "600",
+                      fontSize: "1.1rem",
+                      textTransform: "none",
+                      color: " #488599",
+                      borderRight: "0.1rem solid #ffffff",
+                      minHeight: "1rem",
+                      height: "1rem",
+                      "&.Mui-selected": {
+                        color: "#ffffff",
+                      },
+                    }}
+                  />
+                  <Tab
+                    label={t("Dinner")}
+                    {...a11yProps(2)}
+                    disableRipple
+                    sx={{
+                      flex: 1,
+                      fontWeight: "600",
+                      fontSize: "1.1rem",
+                      textTransform: "none",
+                      color: " #488599",
+                      borderRight: "0.1rem solid #ffffff",
+                      minHeight: "1rem",
+                      height: "1rem",
+                      "&.Mui-selected": {
+                        color: "#ffffff",
+                      },
+                    }}
+                  />
+                  <Tab
+                    label={t("Desserts")}
+                    {...a11yProps(3)}
+                    disableRipple
+                    sx={{
+                      flex: 1,
+                      fontWeight: "600",
+                      fontSize: "1.1rem",
+                      textTransform: "none",
+                      color: " #488599",
+                      minHeight: "1rem",
+                      height: "1rem",
+                      "&.Mui-selected": {
+                        color: "#ffffff",
+                      },
+                    }}
+                  />
                 </Tabs>
               </Box>
             </Box>
-            <Box sx={{ display: "flex", justifyContent: "center" }}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+                marginTop: "1rem",
+              }}
+            >
               <CustomTabPanel value={value} index={0}>
-                <MenuSection title={"Starters"} data={starterData} />
+                <MenuSection data={starterData} />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={1}>
-                <MenuSection title={"Lunch"} data={lunchData} />
+                <MenuSection data={lunchData} />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={2}>
-                <MenuSection title={"Dinner"} data={dinnerData} />
+                <MenuSection data={dinnerData} />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={3}>
-                <MenuSection title="menu.desserts.title" data={dessertData} />
+                <MenuSection data={dessertData} />
               </CustomTabPanel>
             </Box>
           </Box>

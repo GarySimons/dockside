@@ -17,6 +17,8 @@ const MenuSection = ({ data = [], title }) => {
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
+        width: "90vw",
+        maxWidth: "500px",
       }}
     >
       {title && (
@@ -44,6 +46,7 @@ const MenuSection = ({ data = [], title }) => {
             sx={{
               fontSize: "0.9rem",
               fontWeight: "400",
+              color: "#70bbd3",
             }}
           >
             {item.description}
