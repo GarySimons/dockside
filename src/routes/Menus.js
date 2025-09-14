@@ -14,13 +14,10 @@ import docksideImageLunch from "../assets/images/dockside-lunch.jpg";
 import docksideImageDinner from "../assets/images/dockside-dinner.jpg";
 import docksideImageDessert from "../assets/images/dockside-dessert.jpg";
 import starterData from "../assets/data/menuStarter.json";
-import lunchData from "../assets/data/menuLunch.json";
 import mainsData from "../assets/data/menuMains.json";
 import dessertData from "../assets/data/menuDessert.json";
 
-function CustomTabPanel(props) {
-  const { children, value, index, ...other } = props;
-
+function CustomTabPanel({ children, value, index, ...other }) {
   return (
     <div
       role="tabpanel"
@@ -138,25 +135,6 @@ const Menus = () => {
                 />
               </Box>
             </CustomTabPanel>
-            {/* <CustomTabPanel value={value} index={2}>
-              <Box
-                sx={{
-                  width: "100",
-                  height: "30vh",
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  overflow: "hidden",
-                  position: "relative",
-                }}
-              >
-                <img
-                  src={docksideImageDinner}
-                  alt="Dinner"
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
-                />
-              </Box>
-            </CustomTabPanel> */}
             <CustomTabPanel value={value} index={2}>
               <Box
                 sx={{

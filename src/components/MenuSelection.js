@@ -33,22 +33,13 @@ const MenuSection = ({ data = [], title }) => {
       )}
       {data.map((item, index) => (
         <Box key={index}>
-          <Typography
-            sx={{
-              fontSize: "1rem",
-              fontWeight: "900",
-            }}
-          >
-            {item.name}
+          <Typography sx={{ fontSize: "1rem", fontWeight: "900" }}>
+            {t(item.name)}
           </Typography>
           <Typography
-            sx={{
-              fontSize: "0.9rem",
-              fontWeight: "400",
-              color: "#70bbd3",
-            }}
+            sx={{ fontSize: "0.9rem", fontWeight: "400", color: "#70bbd3" }}
           >
-            {item.description}
+            {t(item.description)}
           </Typography>
           <Typography
             sx={{

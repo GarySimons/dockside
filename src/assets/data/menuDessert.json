@@ -1,7 +1,12 @@
 [
   {
-    "name": "banana",
-    "description": "description",
+    "name": "menu.desserts.banana.name",
+    "description": "menu.desserts.banana.description",
+    "price": "1"
+  },
+  {
+    "name": "menu.desserts.banana2.name",
+    "description": "menu.desserts.banana2.description",
     "price": "1"
   }
 ]

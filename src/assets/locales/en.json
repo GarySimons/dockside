@@ -42,5 +42,17 @@
   "Starters": "Starters",
   "Lunch": "Lunch",
   "Dinner": "Dinner",
-  "Desserts": "Desserts"
+  "Desserts": "Desserts",
+  "menu": {
+    "desserts": {
+      "banana": {
+        "name": "Banana",
+        "description": "Fresh banana with cream"
+      },
+      "banana2": {
+        "name": "Banana2",
+        "description": "Fresh banana with cream2"
+      }
+    }
+  }
 }
