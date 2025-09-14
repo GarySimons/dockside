@@ -230,64 +230,45 @@
     },
     "beer": {
       "title": "Beer",
-      "aa": {
-        "name": "x",
-        "description": "xxxx"
+      "moon": {
+        "name": "Blue Moon",
+        "description": "473ml"
       },
-      "bbb": {
-        "name": "x",
-        "description": "xxx"
+      "molson": {
+        "name": "Molson Canadian",
+        "description": "473ml"
       },
-      "ccc": {
-        "name": "cc",
-        "description": "cc"
+      "steam": {
+        "name": "Steamwhistle",
+        "description": "473ml"
       },
-      "dd": {
-        "name": "cc",
-        "description": "x"
+      "sol": {
+        "name": "Sol",
+        "description": "473ml"
       },
-      "ee": {
-        "name": "x",
-        "description": "x"
+      "peroni": {
+        "name": "Peroni",
+        "description": "473ml"
       },
-      "ff": {
-        "name": "cc",
-        "description": "gf"
+      "sapporo": {
+        "name": "sapporo",
+        "description": "500ml"
       },
-      "gg": {
-        "name": "xx",
-        "description": "xx"
-      }
-    },
-    "cider": {
-      "title": "Cider",
-      "aa": {
-        "name": "x",
-        "description": "xxxx"
+      "blood": {
+        "name": "Blood Brothers Blood Light",
+        "description": "355ml"
       },
-      "bbb": {
-        "name": "x",
-        "description": "xxx"
+      "sour": {
+        "name": "Goodlot Fruition Sour",
+        "description": "473ml"
       },
-      "ccc": {
-        "name": "cc",
-        "description": "cc"
+      "amber": {
+        "name": "Henderson's Amber Ale",
+        "description": "473ml"
       },
-      "dd": {
-        "name": "cc",
-        "description": "x"
-      },
-      "ee": {
-        "name": "x",
-        "description": "x"
-      },
-      "ff": {
-        "name": "cc",
-        "description": "gf"
-      },
-      "gg": {
-        "name": "xx",
-        "description": "xx"
+      "wilda": {
+        "name": "Wilda Seltzer Seasonal",
+        "description": "355ml"
       }
     }
   }

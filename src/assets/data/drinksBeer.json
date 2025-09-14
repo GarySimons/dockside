@@ -1,0 +1,52 @@
+[
+  {
+    "name": "drinks.beer.moon.name",
+    "description": "drinks.beer.moon.description",
+    "price": "11"
+  },
+  {
+    "name": "drinks.beer.molson.name",
+    "description": "drinks.beer.molson.description",
+    "price": "11"
+  },
+  {
+    "name": "drinks.beer.steam.name",
+    "description": "drinks.beer.steam.description",
+    "price": "26"
+  },
+  {
+    "name": "drinks.beer.sol.name",
+    "description": "drinks.beer.sol.description",
+    "price": "11"
+  },
+  {
+    "name": "drinks.beer.peroni.name",
+    "description": "drinks.beer.peroni.description",
+    "price": "12"
+  },
+  {
+    "name": "drinks.beer.sapporo.name",
+    "description": "drinks.beer.sapporo.description",
+    "price": "13"
+  },
+  {
+    "name": "drinks.beer.blood.name",
+    "description": "drinks.beer.blood.description",
+    "price": "8"
+  },
+  {
+    "name": "drinks.beer.sour.name",
+    "description": "drinks.beer.sour.description",
+    "price": "11"
+  },
+  {
+    "name": "drinks.beer.amber.name",
+    "description": "drinks.beer.amber.description",
+    "price": "11"
+  },
+  {
+    "name": "drinks.beer.wilda.name",
+    "description": "drinks.beer.wilda.description",
+    "price": "10"
+  }
+]
