@@ -17,7 +17,6 @@ const MenuSection = ({ data = [], title }) => {
         justifyContent: "center",
         alignItems: "center",
         textAlign: "center",
-        width: "90vw",
         maxWidth: "500px",
       }}
     >

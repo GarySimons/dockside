@@ -15,7 +15,7 @@ import docksideImageDinner from "../assets/images/dockside-dinner.jpg";
 import docksideImageDessert from "../assets/images/dockside-dessert.jpg";
 import starterData from "../assets/data/menuStarter.json";
 import lunchData from "../assets/data/menuLunch.json";
-import dinnerData from "../assets/data/menuDinner.json";
+import mainsData from "../assets/data/menuMains.json";
 import dessertData from "../assets/data/menuDessert.json";
 
 function CustomTabPanel(props) {
@@ -138,7 +138,7 @@ const Menus = () => {
                 />
               </Box>
             </CustomTabPanel>
-            <CustomTabPanel value={value} index={2}>
+            {/* <CustomTabPanel value={value} index={2}>
               <Box
                 sx={{
                   width: "100",
@@ -156,8 +156,8 @@ const Menus = () => {
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
               </Box>
-            </CustomTabPanel>
-            <CustomTabPanel value={value} index={3}>
+            </CustomTabPanel> */}
+            <CustomTabPanel value={value} index={2}>
               <Box
                 sx={{
                   width: "100",
@@ -177,101 +177,84 @@ const Menus = () => {
               </Box>
             </CustomTabPanel>
           </Box>
-          <Box sx={{ width: "100%" }}>
-            <Box sx={{}}>
-              <Box
+          <Box sx={{ width: "100" }}>
+            <Box
+              sx={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Tabs
+                value={value}
+                onChange={handleChange}
+                aria-label="Tabs"
+                textColor="#ffffff"
+                indicatorColor="#70bbd3"
                 sx={{
                   display: "flex",
-                  justifyContent: "center",
+                  flexDirection: "column",
+                  "& .MuiTabs-indicator": {
+                    backgroundColor: "",
+                    height: 3,
+                  },
                 }}
               >
-                <Tabs
-                  value={value}
-                  onChange={handleChange}
-                  aria-label="Tabs"
-                  textColor="#ffffff"
-                  indicatorColor="#70bbd3"
+                <Tab
+                  label={t("Starters")}
+                  {...a11yProps(0)}
+                  disableRipple
                   sx={{
-                    "& .MuiTabs-indicator": {
-                      backgroundColor: "",
-                      height: 3,
+                    flex: 1,
+                    fontWeight: "600",
+                    fontSize: isMobile ? "0.9rem" : "1.1rem",
+                    textTransform: "none",
+                    color: " #488599",
+                    borderRight: "0.1rem solid #ffffff",
+                    minHeight: "1rem",
+                    height: "1rem",
+                    "&.Mui-selected": {
+                      color: "#ffffff",
                     },
                   }}
-                >
-                  <Tab
-                    label={t("Starters")}
-                    {...a11yProps(0)}
-                    disableRipple
-                    sx={{
-                      flex: 1,
-                      fontWeight: "600",
-                      fontSize: "1.1rem",
-                      textTransform: "none",
-                      color: " #488599",
-                      borderRight: "0.1rem solid #ffffff",
-                      minHeight: "1rem",
-                      height: "1rem",
-                      "&.Mui-selected": {
-                        color: "#ffffff",
-                      },
-                    }}
-                  />
-                  <Tab
-                    label={t("Lunch")}
-                    {...a11yProps(1)}
-                    disableRipple
-                    sx={{
-                      flex: 1,
-                      fontWeight: "600",
-                      fontSize: "1.1rem",
-                      textTransform: "none",
-                      color: " #488599",
-                      borderRight: "0.1rem solid #ffffff",
-                      minHeight: "1rem",
-                      height: "1rem",
-                      "&.Mui-selected": {
-                        color: "#ffffff",
-                      },
-                    }}
-                  />
-                  <Tab
-                    label={t("Dinner")}
-                    {...a11yProps(2)}
-                    disableRipple
-                    sx={{
-                      flex: 1,
-                      fontWeight: "600",
-                      fontSize: "1.1rem",
-                      textTransform: "none",
-                      color: " #488599",
-                      borderRight: "0.1rem solid #ffffff",
-                      minHeight: "1rem",
-                      height: "1rem",
-                      "&.Mui-selected": {
-                        color: "#ffffff",
-                      },
-                    }}
-                  />
-                  <Tab
-                    label={t("Desserts")}
-                    {...a11yProps(3)}
-                    disableRipple
-                    sx={{
-                      flex: 1,
-                      fontWeight: "600",
-                      fontSize: "1.1rem",
-                      textTransform: "none",
-                      color: " #488599",
-                      minHeight: "1rem",
-                      height: "1rem",
-                      "&.Mui-selected": {
-                        color: "#ffffff",
-                      },
-                    }}
-                  />
-                </Tabs>
-              </Box>
+                />
+                <Tab
+                  label={t("Mains")}
+                  {...a11yProps(1)}
+                  disableRipple
+                  sx={{
+                    flex: 1,
+                    fontWeight: "600",
+                    fontSize: isMobile ? "0.9rem" : "1.1rem",
+                    textTransform: "none",
+                    color: " #488599",
+                    borderRight: "0.1rem solid #ffffff",
+                    minHeight: "1rem",
+                    height: "1rem",
+                    "&.Mui-selected": {
+                      color: "#ffffff",
+                    },
+                  }}
+                />
+                <Tab
+                  label={t("Desserts")}
+                  {...a11yProps(2)}
+                  disableRipple
+                  sx={{
+                    flex: 1,
+                    fontWeight: "600",
+                    fontSize: isMobile ? "0.9rem" : "1.1rem",
+                    textTransform: "none",
+                    color: " #488599",
+                    minHeight: "1rem",
+                    height: "1rem",
+                    "&.Mui-selected": {
+                      color: "#ffffff",
+                    },
+                  }}
+                />
+              </Tabs>
             </Box>
+
             <Box
               sx={{
                 display: "flex",
@@ -283,12 +266,9 @@ const Menus = () => {
                 <MenuSection data={starterData} />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={1}>
-                <MenuSection data={lunchData} />
+                <MenuSection data={mainsData} />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={2}>
-                <MenuSection data={dinnerData} />
-              </CustomTabPanel>
-              <CustomTabPanel value={value} index={3}>
                 <MenuSection data={dessertData} />
               </CustomTabPanel>
             </Box>
