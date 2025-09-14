@@ -40,18 +40,35 @@
   "For more information on events at Dockside, simply complete the form.": "Pour plus d'informations sur les événements chez Dockside, il vous suffit de remplir le formulaire.",
 
   "Starters": "Entrées",
+  "Mains": "Plats",
   "Lunch": "Déjeuner",
   "Dinner": "Dîner",
   "Desserts": "Desserts",
   "menu": {
     "desserts": {
       "banana": {
-        "name": "Banane",
-        "description": "Banane fraîche avec crème"
+        "name": "Tarte à la crème banane et caramel toffee",
+        "description": "dulce de leche, crème à la banane, vanille et chocolat blanc"
       },
-      "banana2": {
-        "name": "Banane2",
-        "description": "Banane fraîche avec crème2"
+      "chocolate-cake": {
+        "name": "Gâteau au chocolat noir Valrhona",
+        "description": "Mousse au maïs soufflé, cacahuètes caramélisées, glace au chocolat blanc et sésame"
+      },
+      "toffee-pudding": {
+        "name": "Pudding au caramel toffee",
+        "description": "Sauce toffee au bourbon, noisettes torréfiées, glace au caramel et beurre noisette"
+      },
+      "crepe": {
+        "name": "Crêpe Suzette pour deux",
+        "description": "Fraises flambées au Cointreau, glace au balsamique, poivre noir fraîchement moulu"
+      },
+      "panna": {
+        "name": "Panna Cotta",
+        "description": "Panna cotta au miel de fleur d’oranger, sorbet à l’orange sanguine, tuile au miel"
+      },
+      "cheesecake": {
+        "name": "Cheesecake basque",
+        "description": "Crème chantilly, compote de fruits rouges"
       }
     }
   }

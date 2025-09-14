@@ -2,11 +2,31 @@
   {
     "name": "menu.desserts.banana.name",
     "description": "menu.desserts.banana.description",
-    "price": "1"
+    "price": "21"
   },
   {
-    "name": "menu.desserts.banana2.name",
-    "description": "menu.desserts.banana2.description",
-    "price": "1"
+    "name": "menu.desserts.chocolate-cake.name",
+    "description": "menu.desserts.chocolate-cake.description",
+    "price": "17"
+  },
+  {
+    "name": "menu.desserts.toffee-pudding.name",
+    "description": "menu.desserts.toffee-pudding.description",
+    "price": "16"
+  },
+  {
+    "name": "menu.desserts.crepe.name",
+    "description": "menu.desserts.crepe.description",
+    "price": "28"
+  },
+  {
+    "name": "menu.desserts.panna.name",
+    "description": "menu.desserts.panna.description",
+    "price": "16"
+  },
+  {
+    "name": "menu.desserts.cheesecake.name",
+    "description": "menu.desserts.cheesecake.description",
+    "price": "18"
   }
 ]
