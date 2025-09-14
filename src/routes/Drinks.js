@@ -92,7 +92,7 @@ const Drinks = () => {
                 position: "absolute",
                 left: "0",
                 top: isDesktop ? "1rem" : "0.4rem",
-                zIndex: "3",
+                zIndex: "1",
               }}
             >
               {t("Drinks")}
@@ -170,6 +170,7 @@ const Drinks = () => {
                 textColor="#ffffff"
                 indicatorColor="#70bbd3"
                 sx={{
+                  width: isMobile ? "80vw" : "360px",
                   display: "flex",
                   flexDirection: "column",
                   "& .MuiTabs-indicator": {
