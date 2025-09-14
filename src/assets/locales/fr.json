@@ -5,6 +5,7 @@
 
   "Home": "Accueil",
   "Menus": "Menus",
+  "Drinks": "Boissons",
   "Events": "Événements",
   "What's On": "Agenda",
   "Contact": "Coordonnées",
@@ -106,6 +107,7 @@
       }
     },
     "desserts": {
+      "title": "DessertsFR",
       "banana": {
         "name": "Tarte à la crème banane et caramel toffee",
         "description": "dulce de leche, crème à la banane, vanille et chocolat blanc"

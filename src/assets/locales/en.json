@@ -5,6 +5,7 @@
 
   "Home": "Home",
   "Menus": "Menus",
+  "Drinks": "Drinks",
   "Events": "Events",
   "What's On": "What's On",
   "Contact": "Contact",
@@ -106,6 +107,7 @@
       }
     },
     "desserts": {
+      "title": "Desserts",
       "banana": {
         "name": "Banana & Toffee Cream Pie",
         "description": "dulce de leche, banana cream, vanilla, white chocolate"

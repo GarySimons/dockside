@@ -43,7 +43,7 @@ function a11yProps(index) {
   };
 }
 
-const Menus = () => {
+const Drinks = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
@@ -93,7 +93,7 @@ const Menus = () => {
                 zIndex: "3",
               }}
             >
-              {t("Menus")}
+              {t("Drinks")}
             </Typography>
             <CustomTabPanel value={value} index={0}>
               <Box
@@ -259,4 +259,4 @@ const Menus = () => {
   );
 };
 
-export default Menus;
+export default Drinks;

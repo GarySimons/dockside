@@ -8,6 +8,7 @@ import Events from "./routes/Events";
 import WhatsOn from "./routes/WhatsOn";
 import Contact from "./routes/Contact";
 import FindUs from "./routes/FindUs";
+import Drinks from "./routes/Drinks";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menus" element={<Menus />} />
+        <Route path="/drinks" element={<Drinks />} />
         <Route path="/events" element={<Events />} />
         <Route path="/find-us" element={<FindUs />} />
         <Route path="/whats-on" element={<WhatsOn />} />
