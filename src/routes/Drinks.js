@@ -9,9 +9,9 @@ import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import MenuSection from "../components/MenuSelection";
-import docksideImageStater from "../assets/images/dockside-starter.jpg";
-import docksideImageLunch from "../assets/images/dockside-lunch.jpg";
-import docksideImageDessert from "../assets/images/dockside-dessert.jpg";
+import docksideImageCocktail from "../assets/images/dockside-cocktail.jpg";
+import docksideImageWine from "../assets/images/dockside-wine.jpg";
+import docksideImageBeer from "../assets/images/dockside-beer.jpg";
 import cocktailData from "../assets/data/drinksCocktails.json";
 import whiteData from "../assets/data/drinksWhite.json";
 import redData from "../assets/data/drinksRed.json";
@@ -111,8 +111,8 @@ const Drinks = () => {
                 }}
               >
                 <img
-                  src={docksideImageStater}
-                  alt="Starter"
+                  src={docksideImageCocktail}
+                  alt="Cocktail"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
               </Box>
@@ -130,8 +130,8 @@ const Drinks = () => {
                 }}
               >
                 <img
-                  src={docksideImageLunch}
-                  alt="Lunch"
+                  src={docksideImageWine}
+                  alt="Wine"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
               </Box>
@@ -149,8 +149,8 @@ const Drinks = () => {
                 }}
               >
                 <img
-                  src={docksideImageDessert}
-                  alt="Dessert"
+                  src={docksideImageBeer}
+                  alt="Beer"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
               </Box>
