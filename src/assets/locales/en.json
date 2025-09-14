@@ -223,33 +223,9 @@
     },
     "sparkle": {
       "title": "Sparkling",
-      "aa": {
-        "name": "x",
-        "description": "xxxx"
-      },
-      "bbb": {
-        "name": "x",
-        "description": "xxx"
-      },
-      "ccc": {
-        "name": "cc",
-        "description": "cc"
-      },
-      "dd": {
-        "name": "cc",
-        "description": "x"
-      },
-      "ee": {
-        "name": "x",
-        "description": "x"
-      },
-      "ff": {
-        "name": "cc",
-        "description": "gf"
-      },
-      "gg": {
-        "name": "xx",
-        "description": "xx"
+      "sandi": {
+        "name": "Villan Sandi Prosecco",
+        "description": "Toscanna, Italy"
       }
     },
     "beer": {

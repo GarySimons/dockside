@@ -12,12 +12,11 @@ import MenuSection from "../components/MenuSelection";
 import docksideImageStater from "../assets/images/dockside-starter.jpg";
 import docksideImageLunch from "../assets/images/dockside-lunch.jpg";
 import docksideImageDessert from "../assets/images/dockside-dessert.jpg";
-import starterData from "../assets/data/menuStarter.json";
-import mainsData from "../assets/data/menuMains.json";
 import dessertData from "../assets/data/menuDessert.json";
 import cocktailData from "../assets/data/drinksCocktails.json";
 import whiteData from "../assets/data/drinksWhite.json";
 import redData from "../assets/data/drinksRed.json";
+import sparklingData from "../assets/data/drinksSparkling.json";
 
 function CustomTabPanel({ children, value, index, ...other }) {
   return (
@@ -257,8 +256,21 @@ const Drinks = () => {
                     mx: "auto",
                   }}
                 />
-
                 <MenuSection title={t("drinks.red.title")} data={redData} />
+                <Divider
+                  variant="middle"
+                  sx={{
+                    borderColor: "#70bbd3",
+                    borderWidth: 1,
+                    marginY: 2,
+                    width: "40%",
+                    mx: "auto",
+                  }}
+                />
+                <MenuSection
+                  title={t("drinks.sparkle.title")}
+                  data={sparklingData}
+                />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={2}>
                 <MenuSection data={dessertData} />
