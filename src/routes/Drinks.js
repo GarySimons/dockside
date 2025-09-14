@@ -1,4 +1,4 @@
-import { Box, Typography } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import React from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 import { useTranslation } from "react-i18next";
@@ -17,6 +17,7 @@ import mainsData from "../assets/data/menuMains.json";
 import dessertData from "../assets/data/menuDessert.json";
 import cocktailData from "../assets/data/drinksCocktails.json";
 import whiteData from "../assets/data/drinksWhite.json";
+import redData from "../assets/data/drinksRed.json";
 
 function CustomTabPanel({ children, value, index, ...other }) {
   return (
@@ -246,6 +247,18 @@ const Drinks = () => {
               </CustomTabPanel>
               <CustomTabPanel value={value} index={1}>
                 <MenuSection title={t("drinks.white.title")} data={whiteData} />
+                <Divider
+                  variant="middle"
+                  sx={{
+                    borderColor: "#70bbd3",
+                    borderWidth: 1,
+                    marginY: 2,
+                    width: "40%",
+                    mx: "auto",
+                  }}
+                />
+
+                <MenuSection title={t("drinks.red.title")} data={redData} />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={2}>
                 <MenuSection data={dessertData} />

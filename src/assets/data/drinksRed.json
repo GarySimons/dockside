@@ -1,32 +1,32 @@
 [
   {
-    "name": "drinks.red.x.name",
-    "description": "drinks.red.x.description",
-    "price": "5oz - 16, 8oz - 25"
+    "name": "drinks.red.beronia.name",
+    "description": "drinks.red.beronia.description",
+    "price": "5oz - 19, 8oz - 30"
   },
   {
-    "name": "drinks.red.x.name",
-    "description": "drinks.red.x.description",
-    "price": "5oz - 21, 8oz - 33"
+    "name": "drinks.red.rosso.name",
+    "description": "drinks.red.rosso.description",
+    "price": "5oz - 17, 8oz - 27"
   },
   {
-    "name": "drinks.red.x.name",
-    "description": "drinks.red.x.description",
-    "price": "22"
+    "name": "drinks.red.sassi.name",
+    "description": "drinks.red.sassi.description",
+    "price": "5oz - 17, 8oz - 27"
   },
   {
-    "name": "drinks.red.x.name",
-    "description": "drinks.red.x.description",
+    "name": "drinks.red.house.name",
+    "description": "drinks.red.house.description",
     "price": "5oz - 18, 8oz - 28"
   },
   {
-    "name": "drinks.red.x.name",
-    "description": "drinks.red.x.description",
-    "price": "5oz -15, 8oz - 24"
+    "name": "drinks.red.salva.name",
+    "description": "drinks.red.salva.description",
+    "price": "5oz -22, 8oz - 35"
   },
   {
-    "name": "drinks.red.x.name",
-    "description": "drinks.red.x.description",
-    "price": "5oz - 17, 8oz - 27"
+    "name": "drinks.red.noir.name",
+    "description": "drinks.red.noir.description",
+    "price": "5oz - 18, 8oz - 28"
   }
 ]

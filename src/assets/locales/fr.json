@@ -197,33 +197,29 @@
     },
     "red": {
       "title": "Red",
-      "aa": {
-        "name": "x",
-        "description": "xxxx"
+      "beronia": {
+        "name": "Beronia",
+        "description": "Rioja, Espagne"
       },
-      "bbb": {
-        "name": "x",
-        "description": "xxx"
+      "rosso": {
+        "name": "Fiora Rosso Domini del Leon",
+        "description": "Veneto, Italie"
       },
-      "ccc": {
-        "name": "cc",
-        "description": "cc"
+      "sassi": {
+        "name": "Bertinga Sassi Ciusi",
+        "description": "Toscanna, Italie"
       },
-      "dd": {
-        "name": "cc",
-        "description": "x"
+      "house": {
+        "name": "Rouge Maison",
+        "description": "California, USA"
       },
-      "ee": {
-        "name": "x",
-        "description": "x"
+      "salva": {
+        "name": "Camino Salva",
+        "description": "Bordeaux, France"
       },
-      "ff": {
-        "name": "cc",
-        "description": "gf"
-      },
-      "gg": {
-        "name": "xx",
-        "description": "xx"
+      "noir": {
+        "name": "Tawse Pinot Noir",
+        "description": "Niagara, Canada"
       }
     },
     "sparkle": {
