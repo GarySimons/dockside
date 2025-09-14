@@ -3,6 +3,9 @@
   "build": "build",
   "copyright": "copyright",
 
+  "English": "English",
+  "French": "French",
+
   "Home": "Home",
   "Menus": "Menus",
   "Drinks": "Drinks",

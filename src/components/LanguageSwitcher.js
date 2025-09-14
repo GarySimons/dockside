@@ -8,22 +8,30 @@ const LanguageSwitcher = () => {
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
   };
+  const { t } = useTranslation();
 
   return (
-    <Stack direction="row" spacing={2}>
+    <Stack direction="row" spacing={1}>
       <Button
         disableRipple
         sx={{
           all: "unset",
           cursor: "pointer",
-          fontSize: "1rem",
+          fontSize: "0.8rem",
           fontWeight: "900",
-          color: i18n.language === "en" ? "#70bbd3" : "",
+          textTransform: "uppercase",
+          border:
+            i18n.language === "en"
+              ? "0.08rem #ffffff solid"
+              : "0.08rem #70bbd3 solid",
+          padding: "0.25rem 0",
+          width: "5.5rem",
+          textAlign: "center",
+          color: i18n.language === "en" ? "" : "#70bbd3",
         }}
-        // variant={i18n.language === "en" ? "contained" : "outlined"}
         onClick={() => changeLanguage("en")}
       >
-        EN
+        {t("English")}
       </Button>
 
       <Button
@@ -31,14 +39,21 @@ const LanguageSwitcher = () => {
         sx={{
           all: "unset",
           cursor: "pointer",
-          fontSize: "1rem",
-          fontWeight: "900",
-          color: i18n.language === "fr" ? "#70bbd3" : "",
+          fontSize: "0.8rem",
+          fontWeight: "700",
+          textTransform: "uppercase",
+          border:
+            i18n.language === "fr"
+              ? "0.08rem #ffffff solid"
+              : "0.08rem #70bbd3 solid",
+          padding: "0.25rem 0",
+          width: "5.5rem",
+          textAlign: "center",
+          color: i18n.language === "fr" ? "" : "#70bbd3",
         }}
-        // variant={i18n.language === "fr" ? "contained" : "outlined"}
         onClick={() => changeLanguage("fr")}
       >
-        FR
+        {t("French")}
       </Button>
     </Stack>
   );

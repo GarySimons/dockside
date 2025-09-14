@@ -85,6 +85,14 @@ const SideMenu = () => {
           padding: "2rem 1rem",
         }}
       >
+        <Box
+          sx={{
+            margin: "0 0 2rem 0",
+            padding: "0 0 0.75rem 0",
+          }}
+        >
+          <LanguageSwitcher />
+        </Box>
         <StyledLink to="/">{t("Home")}</StyledLink>
         <StyledLink to="/menus">{t("Menus")}</StyledLink>
         <StyledLink to="/drinks">{t("Drinks")}</StyledLink>
@@ -102,17 +110,6 @@ const SideMenu = () => {
           padding: "1rem",
         }}
       >
-        {" "}
-        <Box
-          sx={{
-            margin: "0 0 1rem 0",
-            padding: "0 0 0.75rem 0",
-            width: "3.4rem",
-            borderBottom: "1px solid",
-          }}
-        >
-          <LanguageSwitcher />
-        </Box>
         <Box
           sx={{
             display: "flex",
