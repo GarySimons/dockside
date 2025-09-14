@@ -45,6 +45,9 @@
   "Lunch": "Déjeuner",
   "Dinner": "Dîner",
   "Desserts": "Desserts",
+  "Cocktails": "Cocktails",
+  "Wine": "Vin",
+  "Beer": "Bière",
   "menu": {
     "starters": {
       "gem": {
@@ -131,6 +134,189 @@
       "cheesecake": {
         "name": "Cheesecake basque",
         "description": "Crème chantilly, compote de fruits rouges"
+      }
+    }
+  },
+  "drinks": {
+    "cocktails": {
+      "amaro": {
+        "name": "Amaro Punch",
+        "description": "Amaro Doragrosso, sirop de cerise et hibiscus, citron yuzu, soda"
+      },
+      "cosmo": {
+        "name": "Cosmopolitan",
+        "description": "Vodka Smirnoff, Cointreau, jus de citron vert, jus de cranberry"
+      },
+      "green": {
+        "name": "Green Fuego",
+        "description": "Tequila Tromba Blanco infusée aux pois gourmands, Cointreau, orgeat, jus de concombre, absinthe, jus de citron vert, bitters pamplemousse, teinture de piment"
+      },
+      "long": {
+        "name": "Long Island Iced Tea",
+        "description": "Vodka Smirnoff, gin Tanqueray, rhum blanc Captain Morgan, tequila Tromba Blanco, Cointreau, citron, cola"
+      },
+      "paloma": {
+        "name": "Paloma",
+        "description": "Tequila Tromba Blanco, jus de citron vert, jus de pamplemousse, soda"
+      },
+      "sangria": {
+        "name": "Sangria",
+        "description": "Vin rouge, cassis, Chambord, brandy, jus de canneberge, jus d’orange, fruits de saison"
+      },
+      "aviation": {
+        "name": "Aviation",
+        "description": "Gin Tanqueray, Luxardo Maraschino, crème de violette, citron"
+      }
+    },
+    "white": {
+      "title": "White",
+      "cave": {
+        "name": "Cave Sping Riesling",
+        "description": " Niagara, Canada"
+      },
+      "blanc": {
+        "name": "Loveblock Sauvignon Blanc",
+        "description": "Marlborough, New Zealand"
+      },
+      "cloud": {
+        "name": "Cloudsley Cellers Chardonnay",
+        "description": "Niagara, Canada"
+      },
+      "umani": {
+        "name": "Umani Ronchi Vellodoro Pecorino",
+        "description": "Abruzzo, Italie"
+      },
+      "house": {
+        "name": "Blanc Maison",
+        "description": "California, USA"
+      },
+      "villa": {
+        "name": "Villa Marccheesi Pinot Grigio",
+        "description": "Friuli, Italie"
+      }
+    },
+    "red": {
+      "title": "Red",
+      "aa": {
+        "name": "x",
+        "description": "xxxx"
+      },
+      "bbb": {
+        "name": "x",
+        "description": "xxx"
+      },
+      "ccc": {
+        "name": "cc",
+        "description": "cc"
+      },
+      "dd": {
+        "name": "cc",
+        "description": "x"
+      },
+      "ee": {
+        "name": "x",
+        "description": "x"
+      },
+      "ff": {
+        "name": "cc",
+        "description": "gf"
+      },
+      "gg": {
+        "name": "xx",
+        "description": "xx"
+      }
+    },
+    "sparkle": {
+      "title": "Sparkling",
+      "aa": {
+        "name": "x",
+        "description": "xxxx"
+      },
+      "bbb": {
+        "name": "x",
+        "description": "xxx"
+      },
+      "ccc": {
+        "name": "cc",
+        "description": "cc"
+      },
+      "dd": {
+        "name": "cc",
+        "description": "x"
+      },
+      "ee": {
+        "name": "x",
+        "description": "x"
+      },
+      "ff": {
+        "name": "cc",
+        "description": "gf"
+      },
+      "gg": {
+        "name": "xx",
+        "description": "xx"
+      }
+    },
+    "beer": {
+      "title": "Beer",
+      "aa": {
+        "name": "x",
+        "description": "xxxx"
+      },
+      "bbb": {
+        "name": "x",
+        "description": "xxx"
+      },
+      "ccc": {
+        "name": "cc",
+        "description": "cc"
+      },
+      "dd": {
+        "name": "cc",
+        "description": "x"
+      },
+      "ee": {
+        "name": "x",
+        "description": "x"
+      },
+      "ff": {
+        "name": "cc",
+        "description": "gf"
+      },
+      "gg": {
+        "name": "xx",
+        "description": "xx"
+      }
+    },
+    "cider": {
+      "title": "Cider",
+      "aa": {
+        "name": "x",
+        "description": "xxxx"
+      },
+      "bbb": {
+        "name": "x",
+        "description": "xxx"
+      },
+      "ccc": {
+        "name": "cc",
+        "description": "cc"
+      },
+      "dd": {
+        "name": "cc",
+        "description": "x"
+      },
+      "ee": {
+        "name": "x",
+        "description": "x"
+      },
+      "ff": {
+        "name": "cc",
+        "description": "gf"
+      },
+      "gg": {
+        "name": "xx",
+        "description": "xx"
       }
     }
   }

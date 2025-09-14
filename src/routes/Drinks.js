@@ -15,6 +15,8 @@ import docksideImageDessert from "../assets/images/dockside-dessert.jpg";
 import starterData from "../assets/data/menuStarter.json";
 import mainsData from "../assets/data/menuMains.json";
 import dessertData from "../assets/data/menuDessert.json";
+import cocktailData from "../assets/data/drinksCocktails.json";
+import whiteData from "../assets/data/drinksWhite.json";
 
 function CustomTabPanel({ children, value, index, ...other }) {
   return (
@@ -177,7 +179,7 @@ const Drinks = () => {
                 }}
               >
                 <Tab
-                  label={t("Starters")}
+                  label={t("Cocktails")}
                   {...a11yProps(0)}
                   disableRipple
                   sx={{
@@ -195,7 +197,7 @@ const Drinks = () => {
                   }}
                 />
                 <Tab
-                  label={t("Mains")}
+                  label={t("Wine")}
                   {...a11yProps(1)}
                   disableRipple
                   sx={{
@@ -213,7 +215,7 @@ const Drinks = () => {
                   }}
                 />
                 <Tab
-                  label={t("Desserts")}
+                  label={t("Beer")}
                   {...a11yProps(2)}
                   disableRipple
                   sx={{
@@ -240,10 +242,10 @@ const Drinks = () => {
               }}
             >
               <CustomTabPanel value={value} index={0}>
-                <MenuSection data={starterData} />
+                <MenuSection data={cocktailData} />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={1}>
-                <MenuSection data={mainsData} />
+                <MenuSection title={t("drinks.white.title")} data={whiteData} />
               </CustomTabPanel>
               <CustomTabPanel value={value} index={2}>
                 <MenuSection data={dessertData} />

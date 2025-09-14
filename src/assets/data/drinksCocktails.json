@@ -1,0 +1,37 @@
+[
+  {
+    "name": "drinks.cocktails.amaro.name",
+    "description": "drinks.cocktails.amaro.description",
+    "price": "20"
+  },
+  {
+    "name": "drinks.cocktails.cosmo.name",
+    "description": "drinks.cocktails.cosmo.description",
+    "price": "18"
+  },
+  {
+    "name": "drinks.cocktails.green.name",
+    "description": "drinks.cocktails.green.description",
+    "price": "22"
+  },
+  {
+    "name": "drinks.cocktails.long.name",
+    "description": "drinks.cocktails.long.description",
+    "price": "18"
+  },
+  {
+    "name": "drinks.cocktails.paloma.name",
+    "description": "drinks.cocktails.paloma.description",
+    "price": "17"
+  },
+  {
+    "name": "drinks.cocktails.sangria.name",
+    "description": "drinks.cocktails.sangria.description",
+    "price": "22"
+  },
+  {
+    "name": "drinks.cocktails.aviation.name",
+    "description": "drinks.cocktails.aviation.description",
+    "price": "21"
+  }
+]

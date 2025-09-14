@@ -1,0 +1,32 @@
+[
+  {
+    "name": "drinks.white.cave.name",
+    "description": "drinks.white.cave.description",
+    "price": "5oz - 16, 8oz - 25"
+  },
+  {
+    "name": "drinks.white.blanc.name",
+    "description": "drinks.white.blanc.description",
+    "price": "5oz - 21, 8oz - 33"
+  },
+  {
+    "name": "drinks.white.cloud.name",
+    "description": "drinks.white.cloud.description",
+    "price": "22"
+  },
+  {
+    "name": "drinks.white.umani.name",
+    "description": "drinks.white.umani.description",
+    "price": "5oz - 18, 8oz - 28"
+  },
+  {
+    "name": "drinks.white.house.name",
+    "description": "drinks.white.house.description",
+    "price": "5oz -15, 8oz - 24"
+  },
+  {
+    "name": "drinks.white.villa.name",
+    "description": "drinks.white.villa.description",
+    "price": "5oz - 17, 8oz - 27"
+  }
+]

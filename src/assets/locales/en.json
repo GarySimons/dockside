@@ -45,6 +45,9 @@
   "Lunch": "Lunch",
   "Dinner": "Dinner",
   "Desserts": "Desserts",
+  "Cocktails": "Cocktails",
+  "Wine": "Wine",
+  "Beer": "Beer",
   "menu": {
     "starters": {
       "gem": {
@@ -107,7 +110,6 @@
       }
     },
     "desserts": {
-      "title": "Desserts",
       "banana": {
         "name": "Banana & Toffee Cream Pie",
         "description": "dulce de leche, banana cream, vanilla, white chocolate"
@@ -131,6 +133,189 @@
       "cheesecake": {
         "name": "Basque Cheesecake",
         "description": "chantilly cream, berry compote"
+      }
+    }
+  },
+  "drinks": {
+    "cocktails": {
+      "amaro": {
+        "name": "Amaro Punch",
+        "description": "Doragrosso Amaro, Cherry Hibiscus Syrup, Yuzu Lemon, Soda"
+      },
+      "cosmo": {
+        "name": "Cosmopolitan",
+        "description": "Smirnoff Vodka, Cointreau, Lime Juice, Cranberry Juice"
+      },
+      "green": {
+        "name": "Green Fuego",
+        "description": "Sweet Pea Infused Tromba Blanco Tequila, Cointreau, Orgeat, Cucumber Juice, Absinthe, Lime Juice, Grapefruit Bitters, Fire Tincture"
+      },
+      "long": {
+        "name": "Long Island Iced Tea",
+        "description": "Smirnoff Vodka, Tanqueray Gin, Captain Morgan’s White Rum, Tromba Blanco Tequila, Cointreau, Lemon, Coke"
+      },
+      "paloma": {
+        "name": "Paloma",
+        "description": "Tromba Blanco Tequila, Lime Juice, Grapefruit Juice, Soda"
+      },
+      "sangria": {
+        "name": "Sangria",
+        "description": "Red Wine, Cassis, Chambord, Brandy, Cranberry Juice, Orange Juice, Seasonal Fruit"
+      },
+      "aviation": {
+        "name": "Aviation",
+        "description": "Tanqueray Gin, Luxardo Maraschino, Crème de Violette, Lemon"
+      }
+    },
+    "white": {
+      "title": "White",
+      "cave": {
+        "name": "Cave Sping Riesling",
+        "description": " Niagara, Canada"
+      },
+      "blanc": {
+        "name": "Loveblock Sauvignon Blanc",
+        "description": "Marlborough, New Zealand"
+      },
+      "cloud": {
+        "name": "Cloudsley Cellers Chardonnay",
+        "description": "Niagara, Canada"
+      },
+      "umani": {
+        "name": "Umani Ronchi Vellodoro Pecorino",
+        "description": "Abruzzo, Italy"
+      },
+      "house": {
+        "name": "House White",
+        "description": "California, USA"
+      },
+      "villa": {
+        "name": "Villa Marccheesi Pinot Grigio",
+        "description": "Friuli, Italie"
+      }
+    },
+    "red": {
+      "title": "Red",
+      "aa": {
+        "name": "x",
+        "description": "xxxx"
+      },
+      "bbb": {
+        "name": "x",
+        "description": "xxx"
+      },
+      "ccc": {
+        "name": "cc",
+        "description": "cc"
+      },
+      "dd": {
+        "name": "cc",
+        "description": "x"
+      },
+      "ee": {
+        "name": "x",
+        "description": "x"
+      },
+      "ff": {
+        "name": "cc",
+        "description": "gf"
+      },
+      "gg": {
+        "name": "xx",
+        "description": "xx"
+      }
+    },
+    "sparkle": {
+      "title": "Sparkling",
+      "aa": {
+        "name": "x",
+        "description": "xxxx"
+      },
+      "bbb": {
+        "name": "x",
+        "description": "xxx"
+      },
+      "ccc": {
+        "name": "cc",
+        "description": "cc"
+      },
+      "dd": {
+        "name": "cc",
+        "description": "x"
+      },
+      "ee": {
+        "name": "x",
+        "description": "x"
+      },
+      "ff": {
+        "name": "cc",
+        "description": "gf"
+      },
+      "gg": {
+        "name": "xx",
+        "description": "xx"
+      }
+    },
+    "beer": {
+      "title": "Beer",
+      "aa": {
+        "name": "x",
+        "description": "xxxx"
+      },
+      "bbb": {
+        "name": "x",
+        "description": "xxx"
+      },
+      "ccc": {
+        "name": "cc",
+        "description": "cc"
+      },
+      "dd": {
+        "name": "cc",
+        "description": "x"
+      },
+      "ee": {
+        "name": "x",
+        "description": "x"
+      },
+      "ff": {
+        "name": "cc",
+        "description": "gf"
+      },
+      "gg": {
+        "name": "xx",
+        "description": "xx"
+      }
+    },
+    "cider": {
+      "title": "Cider",
+      "aa": {
+        "name": "x",
+        "description": "xxxx"
+      },
+      "bbb": {
+        "name": "x",
+        "description": "xxx"
+      },
+      "ccc": {
+        "name": "cc",
+        "description": "cc"
+      },
+      "dd": {
+        "name": "cc",
+        "description": "x"
+      },
+      "ee": {
+        "name": "x",
+        "description": "x"
+      },
+      "ff": {
+        "name": "cc",
+        "description": "gf"
+      },
+      "gg": {
+        "name": "xx",
+        "description": "xx"
       }
     }
   }
