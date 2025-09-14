@@ -45,6 +45,66 @@
   "Dinner": "Dinner",
   "Desserts": "Desserts",
   "menu": {
+    "starters": {
+      "gem": {
+        "name": "Baby Gem Salad",
+        "description": "market vegetables, fresh herbs, pumpkin & sunflower seeds, green tahini dressing"
+      },
+      "burrata": {
+        "name": "Burrata Salad",
+        "description": "shaved zucchini, sourdough wafer, fennel pollen, green goddess dressing, verjus gastrique, sicilian pistachio"
+      },
+      "focaccia": {
+        "name": "warm Baked Focaccia",
+        "description": "Olive oil, rosemary, St. Brigid’s cultured butter"
+      },
+      "tomatoes": {
+        "name": "Heirloom Tomatoes",
+        "description": "edwin county farms tomatoes, barese cucumber, pickled fennel, macedonian feta, fresh basil, dill, olive oil"
+      },
+      "crab": {
+        "name": "Crab & Avocado",
+        "description": "chilled hand-picked blue crab, wasabi aïoli, pickled ginger, tapioca wafers, togarashi, preserved meyer lemon"
+      },
+      "octopus": {
+        "name": "Grilled Octopus",
+        "description": "cannellini bean romesco, citrus gremolata, lemon, extra virgin olive oil"
+      },
+      "beef": {
+        "name": "Beef Carpaccio",
+        "description": "aged beemster , beech mushroom, brown butter crouton, dried apricot, charred chive dressing"
+      }
+    },
+    "mains": {
+      "grilled": {
+        "name": "Grilled Branzino",
+        "description": "Swiss chard, zucchini crema, sweet drop pepper, Pullman loaf crouton, lemon & brown butter sauce"
+      },
+      "halibut": {
+        "name": "Atlantic Halibut",
+        "description": "green asparagus, confit potato, pickled vegetables, wild leek hollandaise"
+      },
+      "tuna": {
+        "name": "Ahi Tuna Nicoise",
+        "description": "seared ahi tuna, french beans, soft boiled egg, endive, new potatoes, tonnato, grainy mustard & herb vinaigrette"
+      },
+      "cod": {
+        "name": "Miso Glazed Black Cod",
+        "description": "roasted cauliflower & sesame emulsion, steamed greens, chili ponzu dressing, shiitake, lotus chips"
+      },
+      "lobster": {
+        "name": "Lobster Roll",
+        "description": "East Coast lobster, dill mayo, toasted milk bun, french fries"
+      },
+      "pepe": {
+        "name": "Cacio e Pepe",
+        "description": "fresh canestri pasta, kampot pepper, pecorino toscano, stracciatella, pickled pine nuts (v)"
+      },
+      "spagetti": {
+        "name": "Lobster Spagetti",
+        "description": "half butter poached lobster, fresh squid ink pasta, fresh herbs, roasted lobster sauce"
+      }
+    },
     "desserts": {
       "banana": {
         "name": "Banana & Toffee Cream Pie",

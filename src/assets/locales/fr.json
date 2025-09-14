@@ -45,6 +45,66 @@
   "Dinner": "Dîner",
   "Desserts": "Desserts",
   "menu": {
+    "starters": {
+      "gem": {
+        "name": "Salade de sucrine",
+        "description": "Légumes du marché, herbes fraîches, graines de courge et de tournesol, vinaigrette tahini verte"
+      },
+      "burrata": {
+        "name": "Salade de burrata",
+        "description": "Courgettes finement tranchées, tuile de pain au levain, pollen de fenouil, sauce Green Goddess, gastrique au verjus, pistaches de Sicile"
+      },
+      "focaccia": {
+        "name": "Focaccia chaude sortie du four",
+        "description": "Huile d’olive, romarin, beurre affiné St. Brigid"
+      },
+      "tomatoes": {
+        "name": "Tomates anciennes",
+        "description": "Tomates d’Edwin County Farms, concombre Barese, fenouil mariné, feta macédonienne, basilic frais, aneth, huile d’olive"
+      },
+      "crab": {
+        "name": "Crabe et avocat",
+        "description": "Crabe bleu décortiqué et refroidi, aïoli au wasabi, gingembre mariné, tuiles de tapioca, togarashi, citron Meyer confit"
+      },
+      "octopus": {
+        "name": "Poulpe grillé",
+        "description": "Romesco aux haricots cannellini, gremolata aux agrumes, citron, huile d’olive extra vierge"
+      },
+      "beef": {
+        "name": "Carpaccio de bœuf",
+        "description": "Beemster affiné, champignons shii-take, croûtons au beurre noisette, abricots secs, vinaigrette à la ciboulette brûlée"
+      }
+    },
+    "mains": {
+      "grilled": {
+        "name": "Bar grillé",
+        "description": "Blettes, crème de courgette, poivrons doux, croûton de pain Pullman, sauce citron-beurre noisette"
+      },
+      "halibut": {
+        "name": "Flétan de l’Atlantique",
+        "description": "Asperges vertes, pommes de terre confites, légumes marinés, hollandaise à l’ail des ours"
+      },
+      "tuna": {
+        "name": "Salade niçoise au thon Ahi",
+        "description": "Thon Ahi mi-cuit, haricots verts, œuf mollet, endives, pommes de terre nouvelles, sauce tonnato, vinaigrette à la moutarde à l’ancienne et aux herbes"
+      },
+      "cod": {
+        "name": "Morue charbonnière laquée au miso",
+        "description": "Chou-fleur rôti, émulsion au sésame, légumes verts vapeur, vinaigrette ponzu au piment, shiitakés, chips de lotus"
+      },
+      "lobster": {
+        "name": "Roll au homard",
+        "description": "Homard de la côte Est, mayonnaise à l’aneth, pain au lait toasté, frites"
+      },
+      "pepe": {
+        "name": "Cacio e Pepe",
+        "description": "Pâtes canestri fraîches, poivre de Kampot, pecorino toscano, stracciatella, pignons marinés (v)"
+      },
+      "spagetti": {
+        "name": "Spaghetti au homard",
+        "description": "Demi-homard poché au beurre, pâtes fraîches à l’encre de seiche, herbes fraîches, sauce au homard rôti"
+      }
+    },
     "desserts": {
       "banana": {
         "name": "Tarte à la crème banane et caramel toffee",

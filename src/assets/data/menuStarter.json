@@ -1,52 +1,37 @@
 [
   {
-    "name": "Baby Gem Salad",
-    "description": "market vegetables, fresh herbs, pumpkin & sunflower seeds, green tahini dressing",
-    "price": "24"
-  },
-  {
-    "name": "Burrata Salad",
-    "description": "shaved zucchini, sourdough wafer, fennel pollen, green goddess dressing, verjus gastrique, sicilian pistachio",
+    "name": "menu.starters.gem.name",
+    "description": "menu.starters.gem.description",
     "price": "28"
   },
   {
-    "name": "warm Baked Focaccia",
-    "description": "Olive oil, rosemary, St. Brigid’s cultured butter",
+    "name": "menu.starters.burrata.name",
+    "description": "menu.starters.burrata.description",
     "price": "14"
   },
   {
-    "name": "Heirloom Tomatoes",
-    "description": "edwin county farms tomatoes, barese cucumber, pickled fennel, macedonian feta, fresh basil, dill, olive oil",
+    "name": "menu.starters.focaccia.name",
+    "description": "menu.starters.focaccia.description",
     "price": "26"
   },
   {
-    "name": "Crab & Avocado",
-    "description": "chilled hand-picked blue crab, wasabi aïoli, pickled ginger, tapioca wafers, togarashi, preserved meyer lemon",
+    "name": "menu.starters.tomatoes.name",
+    "description": "menu.starters.tomatoes.description",
+    "price": "26"
+  },
+  {
+    "name": "menu.starters.crab.name",
+    "description": "menu.starters.crab.description",
     "price": "33"
   },
   {
-    "name": "Grilled Octopus",
-    "description": "cannellini bean romesco, citrus gremolata, lemon, extra virgin olive oil",
+    "name": "menu.starters.octopus.name",
+    "description": "menu.starters.octopus.description",
     "price": "31"
   },
   {
-    "name": "Beef Carpaccio",
-    "description": "aged beemster , beech mushroom, brown butter crouton, dried apricot, charred chive dressing",
+    "name": "menu.starters.beef.name",
+    "description": "menu.starters.beef.description",
     "price": "28"
-  },
-  {
-    "name": "",
-    "description": "",
-    "price": ""
-  },
-  {
-    "name": "",
-    "description": "",
-    "price": ""
-  },
-  {
-    "name": "",
-    "description": "",
-    "price": ""
   }
 ]

@@ -1,37 +1,37 @@
 [
   {
-    "name": "Grilled Branzino",
-    "description": "swiss chard, zucchini crema, sweet drop pepper, pullman loaf crouton, lemon & brown butter sauce",
+    "name": "menu.mains.grilled.name",
+    "description": "menu.mains.grilled.description",
     "price": "46"
   },
   {
-    "name": "Atlantic Halibut",
-    "description": "green asparagus, confit potato, pickled vegetables, wild leek hollandaise",
+    "name": "menu.mains.halibut.name",
+    "description": "menu.mains.halibut.description",
     "price": "58"
   },
   {
-    "name": "Ahi Tuna Nicoise",
-    "description": "seared ahi tuna, french beans, soft boiled egg, endive, new potatoes, tonnato, grainy mustard & herb vinaigrette",
+    "name": "menu.mains.tuna.name",
+    "description": "menu.mains.tuna.description",
     "price": "44"
   },
   {
-    "name": "Miso Glazed Black Cod",
-    "description": "roasted cauliflower & sesame emulsion, steamed greens, chili ponzu dressing, shiitake, lotus chips",
+    "name": "menu.mains.cod.name",
+    "description": "menu.mains.cod.description",
     "price": "59"
   },
   {
-    "name": "Lobster Roll",
-    "description": "East Coast lobster, dill mayo, toasted milk bun, french fries",
+    "name": "menu.mains.lobster.name",
+    "description": "menu.mains.lobster.description",
     "price": "46"
   },
   {
-    "name": "Cacio e Pepe",
-    "description": "fresh canestri pasta, kampot pepper, pecorino toscano, stracciatella, pickled pine nuts (v)",
+    "name": "menu.mains.pepe.name",
+    "description": "menu.mains.pepe.description",
     "price": "36"
   },
   {
-    "name": "Lobster Spagetti",
-    "description": "half butter poached lobster, fresh squid ink pasta, fresh herbs, roasted lobster sauce",
+    "name": "menu.mains.spagetti.name",
+    "description": "menu.mains.spagetti.description",
     "price": "62"
   }
 ]
