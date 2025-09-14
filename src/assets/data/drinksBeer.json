@@ -12,22 +12,7 @@
   {
     "name": "drinks.beer.steam.name",
     "description": "drinks.beer.steam.description",
-    "price": "26"
-  },
-  {
-    "name": "drinks.beer.sol.name",
-    "description": "drinks.beer.sol.description",
     "price": "11"
-  },
-  {
-    "name": "drinks.beer.peroni.name",
-    "description": "drinks.beer.peroni.description",
-    "price": "12"
-  },
-  {
-    "name": "drinks.beer.sapporo.name",
-    "description": "drinks.beer.sapporo.description",
-    "price": "13"
   },
   {
     "name": "drinks.beer.blood.name",
@@ -48,5 +33,15 @@
     "name": "drinks.beer.wilda.name",
     "description": "drinks.beer.wilda.description",
     "price": "10"
+  },
+  {
+    "name": "drinks.beer.peroni.name",
+    "description": "drinks.beer.peroni.description",
+    "price": "12"
+  },
+  {
+    "name": "drinks.beer.sapporo.name",
+    "description": "drinks.beer.sapporo.description",
+    "price": "13"
   }
 ]
