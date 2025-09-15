@@ -175,38 +175,38 @@
       "title": "White",
       "cave": {
         "name": "Cave Sping Riesling",
-        "description": " Niagara, Canada"
+        "description": "Un vin fruité avec des notes de pomme croquantes et une finale fraîche et croquante.(Niagara, Canada)"
       },
       "blanc": {
         "name": "Loveblock Sauvignon Blanc",
-        "description": "Marlborough, New Zealand"
+        "description": "Arrondi avec des notes florales distinctives. Le beau papillon (Marlborough, New Zealand)"
       },
       "cloud": {
         "name": "Cloudsley Cellers Chardonnay",
-        "description": "Niagara, Canada"
+        "description": "Un vin sec, fruité et frais, élaboré à partir des cépages Narince et Emir. (Niagara, Canada)"
       },
       "umani": {
         "name": "Umani Ronchi Vellodoro Pecorino",
-        "description": "Abruzzo, Italie"
+        "description": "Un vin fruité frais et vif avec une finale moyennement sèche qui a un bouquet piquant et des saveurs persistantes de fruits verts.(Abruzzo, Italie)"
       },
       "house": {
         "name": "Blanc Maison",
-        "description": "California, USA"
+        "description": "Corps moyen, rond, présentant des arômes de pêche et de fleurs sauvages au nez.(California, USA)"
       },
       "villa": {
         "name": "Villa Marccheesi Pinot Grigio",
-        "description": "Friuli, Italie"
+        "description": "Saveurs fraîches de fruits à noyaux blancs, de fleurs blanches et d'une finale de fenouil, salée et saline.(Friuli, Italie)"
       }
     },
     "red": {
       "title": "Red",
       "beronia": {
         "name": "Beronia",
-        "description": "Rioja, Espagne"
+        "description": "Ouvert et doux, ce vin élégant axé sur les fruits a une finale riche, souple et juteuse.(Rioja, Espagne)"
       },
       "rosso": {
         "name": "Fiora Rosso Domini del Leon",
-        "description": "Veneto, Italie"
+        "description": "Fruits rouges profonds, mûrs et moelleux, soutenus par une grande profondeur et une grande structure, ainsi qu'une pointe d'épices.(Veneto, Italie)"
       },
       "sassi": {
         "name": "Bertinga Sassi Ciusi",
@@ -214,22 +214,26 @@
       },
       "house": {
         "name": "Rouge Maison",
-        "description": "California, USA"
+        "description": "Un vin bien équilibré, présentant une bonne acidité en bouche et ample en bouche.(California, USA)"
       },
       "salva": {
         "name": "Camino Salva",
-        "description": "Bordeaux, France"
+        "description": "Un Merlot doux, léger mais savoureux, issu des pentes sud de la France(Bordeaux, France)"
       },
       "noir": {
         "name": "Tawse Pinot Noir",
-        "description": "Niagara, Canada"
+        "description": "Merveilleux arômes de fraises des bois et de fruits rouges mûrs.(Niagara, Canada)"
       }
     },
     "sparkle": {
       "title": "Sparkling",
       "sandi": {
         "name": "Villan Sandi Prosecco",
-        "description": "Toscanna, Italie"
+        "description": "Beaucoup de pétillant amusant, crémeux avec des saveurs de fruits à noyaux blancs.(Toscanna, Italie)"
+      },
+      "rose": {
+        "name": "Lunetta Brut Rose",
+        "description": "Un vin pétillant, digne du Prosecco. Une robe rose tendre avec une finale fruitée et rafraîchissante.(Veneto, Italie)"
       }
     },
     "beer": {

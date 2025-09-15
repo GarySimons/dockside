@@ -174,34 +174,34 @@
       "title": "White",
       "cave": {
         "name": "Cave Sping Riesling",
-        "description": " Niagara, Canada"
+        "description": "A fruit driven wine with crunchy apple notes and a fresh, crisp, finish.(Niagara, Canada)"
       },
       "blanc": {
         "name": "Loveblock Sauvignon Blanc",
-        "description": "Marlborough, New Zealand"
+        "description": "Rounded with distinctive floral notes. ‘The beautiful butterfly’.(Marlborough, New Zealand)"
       },
       "cloud": {
         "name": "Cloudsley Cellers Chardonnay",
-        "description": "Niagara, Canada"
+        "description": "A bright fresh dry fruity wine made from the Narince and Emir grape variety.(Niagara, Canada)"
       },
       "umani": {
         "name": "Umani Ronchi Vellodoro Pecorino",
-        "description": "Abruzzo, Italy"
+        "description": "A fresh, crisp fruity wine with a dry medium finish which has a pungent bouquet and everlasting lingering green fruit flavours.(Abruzzo, Italy)"
       },
       "house": {
         "name": "House White",
-        "description": "California, USA"
+        "description": "Medium bodied, rounded showing aromas of peach and wild flowers on the nose.(California, USA)"
       },
       "villa": {
         "name": "Villa Marccheesi Pinot Grigio",
-        "description": "Friuli, Italie"
+        "description": "Fresh flavours of white stone fruit, white flowers and a fennel, salty, saline finish.(Friuli, Italie)"
       }
     },
     "red": {
       "title": "Red",
       "beronia": {
         "name": "Beronia",
-        "description": "Rioja, Spain"
+        "description": "Open and soft, this elegant fruit focused wine has a rich supple juicy finish.(Rioja, Spain)"
       },
       "rosso": {
         "name": "Fiora Rosso Domini del Leon",
@@ -209,26 +209,30 @@
       },
       "sassi": {
         "name": "Bertinga Sassi Ciusi",
-        "description": "Toscanna, Italy"
+        "description": "Deep, ripe, mellow soft red fruits backed with great depth and structure plus a hint of spice.(Toscanna, Italy)"
       },
       "house": {
         "name": "House Red",
-        "description": "California, USA"
+        "description": "A well balanced wine showing good acidity on the mouthfeel and full on the palate.(California, USA)"
       },
       "salva": {
         "name": "Camino Salva",
-        "description": "Bordeaux, France"
+        "description": "A soft, light yet full flavoured Merlot from the Southern slopes of France. (Bordeaux, France)"
       },
       "noir": {
         "name": "Tawse Pinot Noir",
-        "description": "Niagara, Canada"
+        "description": "Wonderful aromas of wild strawberries and ripe red fruit.(Niagara, Canada)"
       }
     },
     "sparkle": {
       "title": "Sparkling",
       "sandi": {
         "name": "Villan Sandi Prosecco",
-        "description": "Toscanna, Italy"
+        "description": "Lots of fun fizz, creamy with white stone fruit flavours.(Toscanna, Italy)"
+      },
+      "rose": {
+        "name": "Lunetta Brut Rose",
+        "description": "Great fizz. Prosecco in style. A gentle pink in colour with a refreshing soft fruity finish.(Veneto, Italy)"
       }
     },
     "beer": {

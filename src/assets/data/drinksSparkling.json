@@ -3,5 +3,10 @@
     "name": "drinks.sparkle.sandi.name",
     "description": "drinks.sparkle.sandi.description",
     "price": "26"
+  },
+  {
+    "name": "drinks.sparkle.rose.name",
+    "description": "drinks.sparkle.rose.description",
+    "price": "32"
   }
 ]
