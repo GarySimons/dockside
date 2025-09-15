@@ -239,43 +239,43 @@
       "title": "Beer",
       "moon": {
         "name": "Blue Moon",
-        "description": "473ml"
+        "description": "Lively citra hop notes of lemon peel & fresh grapefruit zest and pale gold in appearance(ABV:4.3%)"
       },
       "molson": {
         "name": "Molson Canadian",
-        "description": "473ml"
+        "description": "Light and tropical with notes of passionfruit and mango along with just a hint of sherbet on your tongue.(ABV:4.6%))"
       },
       "steam": {
         "name": "Steamwhistle",
-        "description": "473ml"
+        "description": "Light and hoppy, with citrus pith and grapefruit.(ABV:4%))"
       },
       "sol": {
-        "name": "Sol",
-        "description": "473ml"
+        "name": "Gispy Hill",
+        "description": "Zesty pale ale with luscious grapefruits orange and aromatic pine aromas.(ABV:4.7%))"
       },
       "peroni": {
         "name": "Peroni",
-        "description": "473ml"
+        "description": "Finished with a refreshingly light citrus peel and bittersweet flavour.(ABV:5.1%)"
       },
       "sapporo": {
-        "name": "Sapporo",
-        "description": "500ml"
+        "name": "Easy Livin'",
+        "description": "Incredibly soft and delicate with intense tropical fruit hop aromatics and saturation.(ABV:5%)"
       },
       "blood": {
         "name": "Blood Brothers Blood Light",
-        "description": "355ml"
+        "description": "A tropical taste and a perfectly smooth finish.(ABV:4.1%)"
       },
       "sour": {
         "name": "Goodlot Fruition Sour",
-        "description": "473ml"
+        "description": "Soft and sessionable but packed with tropical flavours and a light piney finish.(ABV:3.1%)"
       },
       "amber": {
         "name": "Henderson's Amber Ale",
-        "description": "473ml"
+        "description": "Black coffee and dark chocolate notes. It’s just as refreshing as our classic lagers yet rich, sweet, bold and more-ish(ABV:4.7%)"
       },
       "wilda": {
         "name": "Wilda Seltzer Seasonal",
-        "description": "355ml"
+        "description": "Bursting with flavours of Mango and Passionfruit.(ABV:4.2%)"
       }
     }
   }

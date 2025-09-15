@@ -240,43 +240,43 @@
       "title": "Beer",
       "moon": {
         "name": "Blue Moon",
-        "description": "473ml"
+        "description": "Notes vives de houblon citra d'écorce de citron et de zeste de pamplemousse frais et d'apparence or pâle.(ABV:4.3%))"
       },
       "molson": {
         "name": "Molson Canadian",
-        "description": "473ml"
+        "description": "Léger et tropical avec des notes de fruit de la passion et de mangue avec juste un soupçon de sorbet sur la langue.(ABV:4.6%))"
       },
       "steam": {
         "name": "Steamwhistle",
-        "description": "473ml"
+        "description": "Léger et houblonné, avec des notes d'agrumes et de pamplemousse.(ABV:4%)"
       },
       "sol": {
-        "name": "Sol",
-        "description": "473ml"
+        "name": "Gispy Hill",
+        "description": "Bière blonde acidulée aux arômes succulents de pamplemousse, d'orange et de pin aromatique.(ABV:4.7%))"
       },
       "peroni": {
         "name": "Peroni",
-        "description": "473ml"
+        "description": "Fini avec un zeste d'agrumes léger et rafraîchissant et une saveur douce-amère.(ABV:5.1%)"
       },
       "sapporo": {
-        "name": "Sapporo",
-        "description": "500ml"
+        "name": "Easy Livin'",
+        "description": "Incroyablement doux et délicat avec des arômes intenses de houblon de fruits tropicaux et une saturation(ABV:5%)"
       },
       "blood": {
         "name": "Blood Brothers Blood Light",
-        "description": "355ml"
+        "description": "Un goût tropical et une finale parfaitement douce.(ABV:1.1%)"
       },
       "sour": {
         "name": "Goodlot Fruition Sour",
-        "description": "473ml"
+        "description": "Doux et agréable à déguster, mais rempli de saveurs tropicales et d'une légère finale de pin(ABV:3.1%)"
       },
       "amber": {
         "name": "Henderson's Amber Ale",
-        "description": "473ml"
+        "description": "Notes de café noir et de chocolat noir. Aussi rafraîchissante que nos lagers classiques, elle est riche, sucrée, corsée et gourmande.(ABV:4.7%)"
       },
       "wilda": {
         "name": "Wilda Seltzer Seasonal",
-        "description": "355ml"
+        "description": "Débordant de saveurs de mangue et de fruit de la passion.(ABV:4.2%)"
       }
     }
   }
