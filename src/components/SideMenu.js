@@ -204,7 +204,6 @@ const SideMenu = () => {
         </Typography>
         <Typography
           sx={{
-            color: "#ffffff",
             fontSize: "0.75rem",
             fontHeight: "1.4",
             fontFamily: "Google Sans Code",
