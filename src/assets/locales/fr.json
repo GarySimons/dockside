@@ -113,7 +113,7 @@
       }
     },
     "desserts": {
-      "title": "DessertsFR",
+      "title": "Desserts",
       "banana": {
         "name": "Tarte à la crème banane et caramel toffee",
         "description": "dulce de leche, crème à la banane, vanille et chocolat blanc"
@@ -252,7 +252,7 @@
       },
       "sol": {
         "name": "Gispy Hill",
-        "description": "Bière blonde acidulée aux arômes succulents de pamplemousse, d'orange et de pin aromatique.(ABV:4.7%))"
+        "description": "Bière blonde acidulée aux arômes succulents de pamplemousse, d'orange et de pin aromatique.(ABV:4.7%)"
       },
       "peroni": {
         "name": "Peroni",

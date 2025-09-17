@@ -9,6 +9,7 @@ import docksideImageExterior from "../assets/images/dockside-exterior.jpg";
 import ReservationForm from "../components/ReservationForm";
 import { useState } from "react";
 import ReservationDialog from "../components/ReservationDialog";
+import Map from "../components/Map";
 
 const FindUs = () => {
   const theme = useTheme();
@@ -254,7 +255,9 @@ const FindUs = () => {
                 backgroundColor: "pink",
                 flex: "1",
               }}
-            ></Box>
+            >
+              <Map />
+            </Box>
           </Box>
         </Box>
         <SideMenu />
