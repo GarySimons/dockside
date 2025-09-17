@@ -4,7 +4,7 @@ import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
 import MainLogo from "../components/MainLogo";
 import { useTranslation } from "react-i18next";
-import docksideImageEvents from "../assets/images/dockside-events.jpg";
+import docksideImageFind from "../assets/images/dockside-find.jpg";
 import docksideImageExterior from "../assets/images/dockside-exterior.jpg";
 import ReservationForm from "../components/ReservationForm";
 import { useState } from "react";
@@ -56,8 +56,8 @@ const FindUs = () => {
             }}
           >
             <img
-              src={docksideImageEvents}
-              alt="Dockside Events"
+              src={docksideImageFind}
+              alt="Dockside Find Us"
               style={{ width: "100%", height: "100%", objectFit: "cover" }}
             />
             <Typography
