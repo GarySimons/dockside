@@ -226,14 +226,21 @@ const FindUs = () => {
             sx={{
               backgroundColor: "#3d393a",
               width: "100",
-              height: "35rem",
-              padding: "3rem",
+              height: isMobile ? "40rem" : "35rem",
+              padding: isMobile ? "1.5rem" : "3rem",
               display: "flex",
               justifyContent: "center",
-              flexDirection: "row",
-              gap: "3rem",
+              flexDirection: isMobile ? "column" : "row",
+              gap: isMobile ? "1.5rem" : "3rem",
             }}
           >
+            <Box
+              sx={{
+                flex: "1",
+              }}
+            >
+              <Map />
+            </Box>
             <Box
               sx={{
                 flex: "1",
@@ -249,14 +256,6 @@ const FindUs = () => {
                 alt="Dockside Exterior"
                 style={{ width: "100%", height: "100%", objectFit: "cover" }}
               />
-            </Box>
-            <Box
-              sx={{
-                backgroundColor: "pink",
-                flex: "1",
-              }}
-            >
-              <Map />
             </Box>
           </Box>
         </Box>
