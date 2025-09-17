@@ -19,7 +19,7 @@ const mapStyles = [
     elementType: "geometry",
     stylers: [
       {
-        color: "#cccccc",
+        color: "#70bbd3",
       },
     ],
   },
@@ -61,7 +61,7 @@ const mapStyles = [
     elementType: "geometry",
     stylers: [
       {
-        color: "#eeeeee",
+        color: "#70bbd3",
       },
     ],
   },
@@ -70,7 +70,7 @@ const mapStyles = [
     elementType: "labels.text.fill",
     stylers: [
       {
-        color: "#757575",
+        color: "#70bbd3",
       },
     ],
   },
@@ -79,7 +79,7 @@ const mapStyles = [
     elementType: "geometry",
     stylers: [
       {
-        color: "#e5e5e5",
+        color: "#70bbd3",
       },
     ],
   },
@@ -160,7 +160,7 @@ const mapStyles = [
     elementType: "geometry",
     stylers: [
       {
-        color: "#d0958d ",
+        color: "#262425 ",
       },
     ],
   },
@@ -169,7 +169,7 @@ const mapStyles = [
     elementType: "labels.text.fill",
     stylers: [
       {
-        color: "#9e9e9e",
+        color: "#262425",
       },
     ],
   },
