@@ -197,8 +197,9 @@ const FindUs = () => {
                 textAlign: "center",
               }}
             >
-              Please note that the last seating for food is 9.30pm Tues - Sat
-              and 7.30pm on Sundays.
+              {t(
+                "Please note that the last seating for food is 9.30pm Tues - Sat and 7.30pm on Sundays."
+              )}
             </Typography>
             <Button
               disableRipple
