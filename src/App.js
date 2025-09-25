@@ -9,10 +9,12 @@ import WhatsOn from "./routes/WhatsOn";
 import Contact from "./routes/Contact";
 import FindUs from "./routes/FindUs";
 import Drinks from "./routes/Drinks";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   return (
     <div>
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menus" element={<Menus />} />
