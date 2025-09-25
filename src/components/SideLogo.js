@@ -2,7 +2,7 @@ import { Typography } from "@mui/material";
 import { useMediaQuery, useTheme } from "@mui/material";
 import { Link } from "react-router-dom";
 
-const MainLogo = () => {
+const SideLogo = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
@@ -18,9 +18,9 @@ const MainLogo = () => {
       <Typography
         sx={{
           fontFamily: "Plaster",
-          fontSize: isMobile ? "3rem" : "6rem",
+          fontSize: isMobile ? "2rem" : "3rem",
           position: "absolute",
-          top: "40%",
+          top: isMobile ? "2.5rem" : "1.5rem",
           left: "2rem",
           fontWeight: "900",
           letterSpacing: "0.05rem",
@@ -33,4 +33,4 @@ const MainLogo = () => {
   );
 };
 
-export default MainLogo;
+export default SideLogo;

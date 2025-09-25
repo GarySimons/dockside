@@ -19,12 +19,12 @@ const ReservationDialog = ({ open, onClose }) => {
       open={open}
       onClose={onClose}
       PaperProps={{
-        sx: { width: 800, maxWidth: "100%", backgroundColor: "#d6f5ff" },
+        sx: { width: 900, maxWidth: "100%", backgroundColor: "#d6f5ff" },
       }}
     >
       <DialogTitle
         sx={{
-          with: "100",
+          width: "100",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",

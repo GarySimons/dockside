@@ -78,17 +78,29 @@ const ReservationForm = () => {
               flex: 1,
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
                 "&:hover fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
               },
               "& .MuiInputLabel-root.Mui-focused": {
-                color: "grey",
+                color: "#777777",
+              },
+              "& .MuiInputBase-input": {
+                fontSize: "0.85rem",
+                padding: "0.625rem 0.75rem",
+                lineHeight: "1.5",
+              },
+              "& .MuiInputLabel-root": {
+                fontSize: "1rem",
+                transform: "translate(0.625rem, 0.55rem)",
+              },
+              "& .MuiInputLabel-shrink": {
+                transform: "translate(0.875rem, -0.563rem) scale(0.75)",
               },
             }}
             label={t("Name")}
@@ -104,17 +116,29 @@ const ReservationForm = () => {
               flex: 1,
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
                 "&:hover fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
               },
               "& .MuiInputLabel-root.Mui-focused": {
-                color: "grey",
+                color: "#777777",
+              },
+              "& .MuiInputBase-input": {
+                fontSize: "0.85rem",
+                padding: "0.625rem 0.75rem",
+                lineHeight: "1.5",
+              },
+              "& .MuiInputLabel-root": {
+                fontSize: "1rem",
+                transform: "translate(0.625rem, 0.55rem)",
+              },
+              "& .MuiInputLabel-shrink": {
+                transform: "translate(0.875rem, -0.563rem) scale(0.75)",
               },
             }}
             label={t("Email")}
@@ -131,17 +155,29 @@ const ReservationForm = () => {
               flex: 1,
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
                 "&:hover fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
               },
               "& .MuiInputLabel-root.Mui-focused": {
-                color: "grey",
+                color: "#777777",
+              },
+              "& .MuiInputBase-input": {
+                fontSize: "0.85rem",
+                padding: "0.625rem 0.75rem",
+                lineHeight: "1.5",
+              },
+              "& .MuiInputLabel-root": {
+                fontSize: "1rem",
+                transform: "translate(0.625rem, 0.55rem)",
+              },
+              "& .MuiInputLabel-shrink": {
+                transform: "translate(0.875rem, -0.563rem) scale(0.75)",
               },
             }}
             label={t("Phone Number")}
@@ -164,17 +200,29 @@ const ReservationForm = () => {
               flex: 1,
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
                 "&:hover fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
               },
               "& .MuiInputLabel-root.Mui-focused": {
-                color: "grey",
+                color: "#777777",
+              },
+              "& .MuiInputBase-input": {
+                fontSize: "0.85rem",
+                padding: "0.625rem 0.75rem",
+                lineHeight: "1.5",
+              },
+              "& .MuiInputLabel-root": {
+                fontSize: "1rem",
+                transform: "translate(0.625rem, 0.55rem)",
+              },
+              "& .MuiInputLabel-shrink": {
+                transform: "translate(0.875rem, -0.563rem) scale(0.75)",
               },
             }}
             label={t("Party Size")}
@@ -207,7 +255,14 @@ const ReservationForm = () => {
             onChange={handleDateChange}
             minDate={dayjs()}
             renderInput={(params) => (
-              <TextField fullWidth {...params} required />
+              <TextField
+                fullWidth
+                {...params}
+                required
+                sx={{
+                  backgroundColor: "red",
+                }}
+              />
             )}
           />
           <TimePicker
@@ -248,17 +303,17 @@ const ReservationForm = () => {
               flex: 1,
               "& .MuiOutlinedInput-root": {
                 "& fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
                 "&:hover fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
                 "&.Mui-focused fieldset": {
-                  borderColor: "grey",
+                  borderColor: "#777777",
                 },
               },
               "& .MuiInputLabel-root.Mui-focused": {
-                color: "grey",
+                color: "#777777",
               },
             }}
             label={t("Extra Comments")}

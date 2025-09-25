@@ -18,7 +18,9 @@ const StyledLink = ({ to, children }) => {
           color: isActive ? "#ffffff" : "#70bbd3",
           fontSize: "1.3rem",
           textDecoration: "none",
+          lineHeight: "1.2",
           fontWeight: "500",
+          marginBottom: "0.25rem",
           "&:hover": {
             opacity: 0.6,
           },

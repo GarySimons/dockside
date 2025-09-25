@@ -2,14 +2,13 @@ import { Box, Button, Typography } from "@mui/material";
 import { useMediaQuery, useTheme } from "@mui/material";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
-import MainLogo from "../components/MainLogo";
 import { useTranslation } from "react-i18next";
 import docksideImageFind from "../assets/images/dockside-find.jpg";
 import docksideImageExterior from "../assets/images/dockside-exterior.jpg";
-import ReservationForm from "../components/ReservationForm";
 import { useState } from "react";
 import ReservationDialog from "../components/ReservationDialog";
 import Map from "../components/Map";
+import SideLogo from "../components/SideLogo";
 
 const FindUs = () => {
   const theme = useTheme();
@@ -34,7 +33,7 @@ const FindUs = () => {
         }}
       >
         <ReservationDialog open={openDialog} onClose={handleClose} />
-        <MainLogo />
+        <SideLogo />
         <Box
           sx={{
             minHeight: "100vh",

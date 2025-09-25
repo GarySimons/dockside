@@ -3,7 +3,7 @@ import React from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
-import MainLogo from "../components/MainLogo";
+import SideLogo from "../components/SideLogo";
 
 const WhatsOn = () => {
   const theme = useTheme();
@@ -17,7 +17,7 @@ const WhatsOn = () => {
           display: "flex",
         }}
       >
-        <MainLogo />
+        <SideLogo />
         <Box
           sx={{
             minHeight: "100vh",

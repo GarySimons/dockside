@@ -82,7 +82,8 @@ const Home = () => {
             <Typography
               sx={{
                 flex: "2",
-                fontSize: "1.4rem",
+                fontSize: isMobile ? "1.2rem" : "1.4rem",
+                lineHeight: isMobile ? "1.3" : "1.4",
               }}
             >
               {t(

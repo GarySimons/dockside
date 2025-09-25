@@ -2,10 +2,10 @@ import { Box, Typography } from "@mui/material";
 import { useMediaQuery, useTheme } from "@mui/material";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
-import MainLogo from "../components/MainLogo";
 import { useTranslation } from "react-i18next";
 import docksideImageEvents from "../assets/images/dockside-events.jpg";
 import ReservationForm from "../components/ReservationForm";
+import SideLogo from "../components/SideLogo";
 
 const Events = () => {
   const theme = useTheme();
@@ -20,7 +20,7 @@ const Events = () => {
           display: "flex",
         }}
       >
-        <MainLogo />
+        <SideLogo />
         <Box
           sx={{
             minHeight: "100vh",

@@ -4,7 +4,6 @@ import { useMediaQuery, useTheme } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
-import MainLogo from "../components/MainLogo";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -15,6 +14,7 @@ import docksideImageDessert from "../assets/images/dockside-dessert.jpg";
 import starterData from "../assets/data/menuStarter.json";
 import mainsData from "../assets/data/menuMains.json";
 import dessertData from "../assets/data/menuDessert.json";
+import SideLogo from "../components/SideLogo";
 
 function CustomTabPanel({ children, value, index, ...other }) {
   return (
@@ -63,7 +63,7 @@ const Menus = () => {
           position: "relative",
         }}
       >
-        <MainLogo />
+        <SideLogo />
 
         <Box
           sx={{

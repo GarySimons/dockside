@@ -4,7 +4,6 @@ import { useMediaQuery, useTheme } from "@mui/material";
 import { useTranslation } from "react-i18next";
 import SideMenu from "../components/SideMenu";
 import Footer from "../components/Footer";
-import MainLogo from "../components/MainLogo";
 import PropTypes from "prop-types";
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
@@ -17,6 +16,7 @@ import whiteData from "../assets/data/drinksWhite.json";
 import redData from "../assets/data/drinksRed.json";
 import sparklingData from "../assets/data/drinksSparkling.json";
 import beerData from "../assets/data/drinksBeer.json";
+import SideLogo from "../components/SideLogo";
 
 function CustomTabPanel({ children, value, index, ...other }) {
   return (
@@ -65,7 +65,7 @@ const Drinks = () => {
           position: "relative",
         }}
       >
-        <MainLogo />
+        <SideLogo />
 
         <Box
           sx={{
