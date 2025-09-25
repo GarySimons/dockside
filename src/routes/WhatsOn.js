@@ -1,4 +1,4 @@
-import { Box } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import React from "react";
 import { useMediaQuery, useTheme } from "@mui/material";
 import SideMenu from "../components/SideMenu";
@@ -29,10 +29,24 @@ const WhatsOn = () => {
         >
           <Box
             sx={{
-              background: "orange",
+              background: "#201d1e",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
             }}
           >
-            Whats on
+            <Typography
+              sx={{
+                fontFamily: "Plaster",
+                fontSize: "6rem",
+                fontWeight: "900",
+                letterSpacing: "0.05rem",
+                zIndex: "1",
+                color: "#fff",
+              }}
+            >
+              D
+            </Typography>
           </Box>
         </Box>
         <SideMenu />
