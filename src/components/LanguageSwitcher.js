@@ -19,7 +19,6 @@ const LanguageSwitcher = () => {
           cursor: "pointer",
           fontSize: "0.8rem",
           fontWeight: "900",
-          textTransform: "uppercase",
           border:
             i18n.language === "en"
               ? "0.08rem #ffffff solid"
@@ -41,7 +40,6 @@ const LanguageSwitcher = () => {
           cursor: "pointer",
           fontSize: "0.8rem",
           fontWeight: "700",
-          textTransform: "uppercase",
           border:
             i18n.language === "fr"
               ? "0.08rem #ffffff solid"
