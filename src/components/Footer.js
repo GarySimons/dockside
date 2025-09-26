@@ -2,6 +2,7 @@ import { Box, Typography } from "@mui/material";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery, useTheme } from "@mui/material";
+import NewsletterBottomBar from "./NewsletterBottomBar";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -22,30 +23,66 @@ const Footer = () => {
         padding: isDesktop ? "1rem 17rem 1rem 1rem" : "1rem",
       }}
     >
-      <Typography
+      <Box
         sx={{
-          fontSize: "0.7rem",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
         }}
-      >
-        {t("design")}
-        &nbsp;&nbsp;|&nbsp;&nbsp;{t("build")}&nbsp;&nbsp;|&nbsp;&nbsp;&copy;
-        {t("copyright")} {currentYear}:{" "}
-      </Typography>
-      <a
-        href="https://www.garysimons.co.uk/"
-        target="_blank"
-        rel="noopener noreferrer"
       >
         <Typography
           sx={{
-            fontSize: "0.7rem",
-            textDecoration: "underline",
-            color: "#ffffff",
+            fontSize: "1.2rem",
+            fontWeight: "800",
           }}
         >
-          GCS
+          Newletter Signup
         </Typography>
-      </a>
+        <Typography
+          sx={{
+            fontSize: "0.8rem",
+            color: "#70bbd3",
+          }}
+        >
+          Be the first to hear about new menus and upcoming events
+        </Typography>
+        <NewsletterBottomBar />
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "1.5rem",
+          }}
+        >
+          <Typography
+            sx={{
+              fontSize: "0.7rem",
+            }}
+          >
+            {t("design")}
+            &nbsp;&nbsp;|&nbsp;&nbsp;{t("build")}&nbsp;&nbsp;|&nbsp;&nbsp;&copy;
+            {t("copyright")} {currentYear}:{" "}
+          </Typography>
+          <a
+            href="https://www.garysimons.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Typography
+              sx={{
+                fontSize: "0.7rem",
+                textDecoration: "underline",
+                margin: "0 0 0 0.25rem",
+                color: "#ffffff",
+              }}
+            >
+              GCS
+            </Typography>
+          </a>
+        </Box>
+      </Box>
     </Box>
   );
 };
