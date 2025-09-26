@@ -19,38 +19,29 @@ export default function NewsletterBottomBar() {
   };
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <List>
-        {["Inbox", "Starred", "Send email", "Drafts"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
-      <List>
-        {["All mail", "Trash", "Spam"].map((text, index) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton>
-              <ListItemIcon>
-                {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-              </ListItemIcon>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
+    <Box
+      sx={{
+        height: 300,
+        display: "flex",
+        justifyContent: "center",
+      }}
+      role="presentation"
+      onClick={toggleDrawer(false)}
+    >
+      <Box
+        sx={{
+          backgroundColor: "pink",
+          height: "100%",
+          width: "90vw",
+        }}
+      ></Box>
     </Box>
   );
 
   return (
     <div>
       <Button
+        disableRipple
         sx={{
           all: "unset",
           textDecoration: "underline",
@@ -65,7 +56,7 @@ export default function NewsletterBottomBar() {
       >
         Sign Me Up
       </Button>
-      <Drawer open={open} onClose={toggleDrawer(false)}>
+      <Drawer anchor="bottom" open={open} onClose={toggleDrawer(false)}>
         {DrawerList}
       </Drawer>
     </div>
