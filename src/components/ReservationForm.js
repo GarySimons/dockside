@@ -365,7 +365,7 @@ const ReservationForm = () => {
             cursor: "pointer",
             display: "flex",
             justifyContent: "center",
-            padding: "1rem",
+            padding: "0.5rem",
             border: "0.05rem solid #777777",
             color: "#ffffff",
             backgroundColor: "#777777",

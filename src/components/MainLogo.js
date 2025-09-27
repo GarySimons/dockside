@@ -18,9 +18,9 @@ const MainLogo = () => {
       <Typography
         sx={{
           fontFamily: "Plaster",
-          fontSize: isMobile ? "3rem" : "6rem",
+          fontSize: isMobile ? "13vw" : "11vw",
           position: "absolute",
-          top: "40%",
+          top: isMobile ? "40%" : "37%",
           left: "2rem",
           fontWeight: "900",
           letterSpacing: "0.05rem",

@@ -15,7 +15,7 @@ const Footer = () => {
     <Box
       sx={{
         backgroundColor: "#262425",
-        height: "10rem",
+        height: "12rem",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
@@ -35,6 +35,7 @@ const Footer = () => {
           sx={{
             fontSize: "1.2rem",
             fontWeight: "800",
+            textAlign: "center",
           }}
         >
           {t("Newletter Signup")}
@@ -43,6 +44,7 @@ const Footer = () => {
           sx={{
             fontSize: "0.8rem",
             color: "#70bbd3",
+            textAlign: "center",
           }}
         >
           {t("Be the first to hear about new menus and upcoming events")}
@@ -53,7 +55,7 @@ const Footer = () => {
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
-            marginTop: "1.5rem",
+            marginTop: "1.75rem",
           }}
         >
           <Typography
