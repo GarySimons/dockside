@@ -276,6 +276,7 @@ const ReservationForm = () => {
 
         <Button
           type="submit"
+          disableRipple
           sx={{
             all: "unset",
             cursor: "pointer",

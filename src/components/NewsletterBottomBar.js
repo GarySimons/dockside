@@ -5,9 +5,11 @@ import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import NewsletterEmailForm from "./NewsletterEmailForm";
 import CloseIcon from "@mui/icons-material/Close";
+import { useTranslation } from "react-i18next";
 
 export default function NewsletterBottomBar() {
   const [open, setOpen] = useState(false);
+  const { t } = useTranslation();
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -66,7 +68,7 @@ export default function NewsletterBottomBar() {
               color: "#ffffff",
             }}
           >
-            Join the Dockside Newsletter
+            {t("Join the Dockside Newsletter")}
           </Typography>
           <Typography
             sx={{
@@ -78,7 +80,7 @@ export default function NewsletterBottomBar() {
               color: "#ffffff",
             }}
           >
-            No Spam, we promise
+            {t("No Spam, we promise")}
           </Typography>
           <NewsletterEmailForm toggleDrawer={toggleDrawer} />
         </Box>
@@ -102,7 +104,7 @@ export default function NewsletterBottomBar() {
         }}
         onClick={toggleDrawer(true)}
       >
-        Sign Me Up
+        {t("Sign Me Up")}
       </Button>
       <Drawer anchor="bottom" open={open} onClose={toggleDrawer(false)}>
         {DrawerList}

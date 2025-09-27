@@ -37,7 +37,7 @@ const Footer = () => {
             fontWeight: "800",
           }}
         >
-          Newletter Signup
+          {t("Newletter Signup")}
         </Typography>
         <Typography
           sx={{
@@ -45,7 +45,7 @@ const Footer = () => {
             color: "#70bbd3",
           }}
         >
-          Be the first to hear about new menus and upcoming events
+          {t("Be the first to hear about new menus and upcoming events")}
         </Typography>
         <NewsletterBottomBar />
         <Box

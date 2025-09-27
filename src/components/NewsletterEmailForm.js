@@ -3,11 +3,13 @@ import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
 import { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const NewsletterEmailForm = ({ toggleDrawer }) => {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
+  const { t } = useTranslation();
 
   const isValidEmail = (email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
@@ -34,7 +36,7 @@ const NewsletterEmailForm = ({ toggleDrawer }) => {
   return (
     <form onSubmit={handleSubmit}>
       <TextField
-        label="Email"
+        label={t("Email")}
         name="email"
         type="email"
         size="small"
@@ -104,7 +106,7 @@ const NewsletterEmailForm = ({ toggleDrawer }) => {
               color: "#ffffff",
             }}
           >
-            Thank you for joining
+            {t("Thank you for joining")}
           </Typography>
           <Typography
             sx={{
@@ -116,7 +118,7 @@ const NewsletterEmailForm = ({ toggleDrawer }) => {
               color: "#ffffff",
             }}
           >
-            We look forward to sending you exciting content
+            {t("We look forward to sending you exciting content.")}
           </Typography>
           <Typography
             onClick={toggleDrawer(false)}
@@ -131,7 +133,7 @@ const NewsletterEmailForm = ({ toggleDrawer }) => {
               textDecoration: "underline",
             }}
           >
-            Close
+            {t("Close")}
           </Typography>
         </Box>
       )}
@@ -157,7 +159,7 @@ const NewsletterEmailForm = ({ toggleDrawer }) => {
           },
         }}
       >
-        Join
+        {t("Join")}
       </Button>
     </form>
   );
