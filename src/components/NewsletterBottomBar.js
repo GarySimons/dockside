@@ -1,18 +1,12 @@
-import * as React from "react";
+import { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import List from "@mui/material/List";
-import Divider from "@mui/material/Divider";
-import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
+import Typography from "@mui/material/Typography";
+import NewsletterEmailForm from "./NewsletterEmailForm";
 
 export default function NewsletterBottomBar() {
-  const [open, setOpen] = React.useState(false);
+  const [open, setOpen] = useState(false);
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen);
@@ -26,15 +20,52 @@ export default function NewsletterBottomBar() {
         justifyContent: "center",
       }}
       role="presentation"
-      onClick={toggleDrawer(false)}
+      // onClick={toggleDrawer(false)}
     >
       <Box
         sx={{
-          backgroundColor: "pink",
           height: "100%",
-          width: "90vw",
+          display: "flex",
+          justifyContent: "center",
+          backgroundColor: "yellow",
         }}
-      ></Box>
+      >
+        <Box
+          sx={{
+            height: "100%",
+            width: "90vw",
+            maxWidth: "30rem",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            backgroundColor: "pink",
+          }}
+        >
+          <Typography
+            sx={{
+              fontSize: "1.2rem",
+              fontWeight: "700",
+              lineHeight: "1.3",
+              textAlign: "center",
+            }}
+          >
+            Join the Dockside Newsletter
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: "0.8rem",
+              fontWeight: "400",
+              lineHeight: "1.3",
+              textAlign: "center",
+              margin: "1rem 0",
+            }}
+          >
+            No Spam, we promise
+          </Typography>
+          <NewsletterEmailForm />
+        </Box>
+      </Box>
     </Box>
   );
 

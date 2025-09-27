@@ -57,6 +57,7 @@ const ReservationForm = () => {
     <LocalizationProvider dateAdapter={AdapterDayjs}>
       <Box
         component="form"
+        autoComplete="off"
         onSubmit={handleSubmit}
         sx={{
           mx: "auto",
@@ -93,6 +94,7 @@ const ReservationForm = () => {
             }}
             label={t("Name")}
             name="name"
+            size="small"
             fullWidth
             value={formData.name}
             onChange={handleChange}
