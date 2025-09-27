@@ -15,6 +15,7 @@ const ReservationForm = () => {
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
   const { t } = useTranslation();
+  const [submitMessage, setSubmitMessage] = useState(false);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -51,6 +52,18 @@ const ReservationForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
+    setFormData({
+      name: "",
+      email: "",
+      phone: "",
+      partySize: "",
+      date: null,
+      time: null,
+      comments: "",
+    });
+    setSubmitMessage(true);
+    console.log("Data:", formData);
+    console.log("submitMessage:", submitMessage);
   };
 
   return (
