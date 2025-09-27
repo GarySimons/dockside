@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import pointer from "../assets/images/pointer.png";

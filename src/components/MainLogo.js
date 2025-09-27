@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const MainLogo = () => {
   const theme = useTheme();
   const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
-  const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
 
   return (
     <Link

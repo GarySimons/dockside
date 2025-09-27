@@ -1,5 +1,4 @@
 import { Box, Typography } from "@mui/material";
-import React from "react";
 import { useTranslation } from "react-i18next";
 import { useMediaQuery, useTheme } from "@mui/material";
 import NewsletterBottomBar from "./NewsletterBottomBar";
@@ -7,7 +6,6 @@ import NewsletterBottomBar from "./NewsletterBottomBar";
 const Footer = () => {
   const currentYear = new Date().getFullYear();
   const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const isDesktop = useMediaQuery(theme.breakpoints.up("md"));
   const { t } = useTranslation();
 
