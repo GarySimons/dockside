@@ -4,6 +4,7 @@ import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
 import Typography from "@mui/material/Typography";
 import NewsletterEmailForm from "./NewsletterEmailForm";
+import CloseIcon from "@mui/icons-material/Close";
 
 export default function NewsletterBottomBar() {
   const [open, setOpen] = useState(false);
@@ -15,7 +16,7 @@ export default function NewsletterBottomBar() {
   const DrawerList = (
     <Box
       sx={{
-        height: 300,
+        height: "18rem",
         display: "flex",
         justifyContent: "center",
       }}
@@ -25,9 +26,11 @@ export default function NewsletterBottomBar() {
       <Box
         sx={{
           height: "100%",
+          width: "100vw",
           display: "flex",
           justifyContent: "center",
-          backgroundColor: "yellow",
+          position: "relative",
+          backgroundColor: "#488599",
         }}
       >
         <Box
@@ -39,15 +42,28 @@ export default function NewsletterBottomBar() {
             flexDirection: "column",
             justifyContent: "center",
             alignItems: "center",
-            backgroundColor: "pink",
           }}
         >
+          <CloseIcon
+            onClick={toggleDrawer(false)}
+            sx={{
+              position: "absolute",
+              top: "1rem",
+              right: "1rem",
+              cursor: "pointer",
+              color: "#ffffff",
+              "&:hover": {
+                opacity: "0.6",
+              },
+            }}
+          />
           <Typography
             sx={{
               fontSize: "1.2rem",
               fontWeight: "700",
               lineHeight: "1.3",
               textAlign: "center",
+              color: "#ffffff",
             }}
           >
             Join the Dockside Newsletter
@@ -59,6 +75,7 @@ export default function NewsletterBottomBar() {
               lineHeight: "1.3",
               textAlign: "center",
               margin: "1rem 0",
+              color: "#ffffff",
             }}
           >
             No Spam, we promise

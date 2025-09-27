@@ -38,6 +38,7 @@ const NewsletterEmailForm = ({ toggleDrawer }) => {
         name="email"
         type="email"
         size="small"
+        autoComplete="off"
         fullWidth
         value={email}
         onChange={handleChange}
@@ -47,27 +48,30 @@ const NewsletterEmailForm = ({ toggleDrawer }) => {
         sx={{
           flex: 1,
           mt: 1,
+          color: "#ffffff",
           "& .MuiOutlinedInput-root": {
             fontSize: "0.8rem",
+            color: "#ffffff",
             height: 36,
             "& input": {
               padding: "8px",
             },
             "& fieldset": {
-              borderColor: hasError ? "red" : "grey",
+              borderColor: hasError ? "red" : "#ffffff",
             },
             "&:hover fieldset": {
-              borderColor: hasError ? "red" : "grey",
+              borderColor: hasError ? "red" : "#ffffff",
             },
             "&.Mui-focused fieldset": {
-              borderColor: hasError ? "red" : "grey",
+              borderColor: hasError ? "red" : "#ffffff",
             },
           },
           "& .MuiInputLabel-root": {
             fontSize: "0.8rem",
+            color: "#ffffff",
           },
           "& .MuiInputLabel-root.Mui-focused": {
-            color: hasError ? "red" : "grey",
+            color: hasError ? "red" : "#ffffff",
           },
           "& .MuiFormHelperText-root": {
             fontSize: "0.7rem",
@@ -141,15 +145,15 @@ const NewsletterEmailForm = ({ toggleDrawer }) => {
           display: "flex",
           justifyContent: "center",
           padding: "0.5rem",
-          border: "0.05rem solid #777777",
-          color: "#ffffff",
-          backgroundColor: "#777777",
+          border: "0.05rem solid #ffffff",
+          color: "#000000",
+          backgroundColor: "#ffffff",
           borderRadius: "0.2rem",
           width: "25rem",
           marginTop: "1rem",
           "&:hover": {
             backgroundColor: "transparent",
-            color: "#777777",
+            color: "#ffffff",
           },
         }}
       >

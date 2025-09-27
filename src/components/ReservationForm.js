@@ -95,6 +95,7 @@ const ReservationForm = () => {
             label={t("Name")}
             name="name"
             size="small"
+            autoComplete="off"
             fullWidth
             value={formData.name}
             onChange={handleChange}
@@ -122,6 +123,8 @@ const ReservationForm = () => {
             label={t("Email")}
             name="email"
             type="email"
+            size="small"
+            autoComplete="off"
             fullWidth
             value={formData.email}
             onChange={handleChange}
@@ -149,6 +152,8 @@ const ReservationForm = () => {
             label={t("Phone Number")}
             name="phone"
             type="tel"
+            size="small"
+            autoComplete="off"
             fullWidth
             value={formData.phone}
             onChange={handleChange}
@@ -182,60 +187,55 @@ const ReservationForm = () => {
             label={t("Party Size")}
             name="partySize"
             type="number"
+            size="small"
+            autoComplete="off"
             fullWidth
             value={formData.partySize}
             onChange={handleChange}
           />
           <DatePicker
-            sx={{
-              flex: 1,
-              "& .MuiOutlinedInput-root": {
-                "& fieldset": {
-                  borderColor: "grey",
-                },
-                "&:hover fieldset": {
-                  borderColor: "grey",
-                },
-                "&.Mui-focused fieldset": {
-                  borderColor: "grey",
-                },
-              },
-              "& .MuiInputLabel-root.Mui-focused": {
-                color: "grey",
-              },
-            }}
             label={t("Select Date")}
             value={formData.date}
             onChange={handleDateChange}
             minDate={dayjs()}
-            renderInput={(params) => (
-              <TextField fullWidth {...params} required />
-            )}
-          />
-          <TimePicker
-            sx={{
-              flex: 1,
-              "& .MuiOutlinedInput-root": {
-                "& fieldset": {
-                  borderColor: "grey",
+            slotProps={{
+              textField: {
+                required: true,
+                size: "small",
+                fullWidth: true,
+                sx: {
+                  flex: 1,
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": { borderColor: "grey" },
+                    "&:hover fieldset": { borderColor: "grey" },
+                    "&.Mui-focused fieldset": { borderColor: "grey" },
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": { color: "grey" },
                 },
-                "&:hover fieldset": {
-                  borderColor: "grey",
-                },
-                "&.Mui-focused fieldset": {
-                  borderColor: "grey",
-                },
-              },
-              "& .MuiInputLabel-root.Mui-focused": {
-                color: "grey",
               },
             }}
+          />
+
+          <TimePicker
             label={t("Select Time")}
             value={formData.time}
             onChange={handleTimeChange}
-            renderInput={(params) => (
-              <TextField fullWidth {...params} required />
-            )}
+            slotProps={{
+              textField: {
+                required: true,
+                size: "small",
+                fullWidth: true,
+                sx: {
+                  flex: 1,
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": { borderColor: "grey" },
+                    "&:hover fieldset": { borderColor: "grey" },
+                    "&.Mui-focused fieldset": { borderColor: "grey" },
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": { color: "grey" },
+                },
+              },
+            }}
           />
         </Box>
         <Box
@@ -265,6 +265,7 @@ const ReservationForm = () => {
             }}
             label={t("Extra Comments")}
             name="comments"
+            autoComplete="off"
             multiline
             rows={4}
             fullWidth
