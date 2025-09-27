@@ -118,7 +118,7 @@ const NewsletterEmailForm = ({ toggleDrawer }) => {
               color: "#ffffff",
             }}
           >
-            {t("We look forward to sending you exciting content.")}
+            {t("We look forward to sending you exciting content")}
           </Typography>
           <Typography
             onClick={toggleDrawer(false)}

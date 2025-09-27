@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { TextField, Button, Box } from "@mui/material";
+import { TextField, Button, Box, Typography } from "@mui/material";
 import {
   DatePicker,
   TimePicker,
@@ -62,7 +62,6 @@ const ReservationForm = () => {
       comments: "",
     });
     setSubmitMessage(true);
-    console.log("Data:", formData);
     console.log("submitMessage:", submitMessage);
   };
 
@@ -308,6 +307,47 @@ const ReservationForm = () => {
         >
           {t("Submit Request")}
         </Button>
+        {submitMessage && (
+          <Box
+            sx={{
+              position: "absolute",
+              backgroundColor: "#3d393a",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              padding: "1.5rem",
+              top: "50%",
+              left: "50%",
+              transform: "translate(-50%, -50%)",
+              zIndex: "1",
+            }}
+          >
+            <Typography
+              sx={{
+                fontSize: "1rem",
+                fontWeight: "700",
+                lineHeight: "1.3",
+                textAlign: "center",
+                color: "#ffffff",
+              }}
+            >
+              {t("Thank you for your reservation enquiry")}
+            </Typography>
+            <Typography
+              sx={{
+                fontSize: "0.8rem",
+                fontWeight: "400",
+                lineHeight: "1.3",
+                textAlign: "center",
+                margin: "1rem 0 0 0",
+                color: "#ffffff",
+              }}
+            >
+              {t("We will email you to confirm your booking")}
+            </Typography>
+          </Box>
+        )}
       </Box>
     </LocalizationProvider>
   );
