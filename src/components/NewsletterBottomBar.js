@@ -63,7 +63,7 @@ export default function NewsletterBottomBar() {
           >
             No Spam, we promise
           </Typography>
-          <NewsletterEmailForm />
+          <NewsletterEmailForm toggleDrawer={toggleDrawer} />
         </Box>
       </Box>
     </Box>

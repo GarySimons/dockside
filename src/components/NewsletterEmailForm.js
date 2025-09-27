@@ -1,8 +1,10 @@
+import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
+import Typography from "@mui/material/Typography";
 import { useState } from "react";
 
-const NewsletterEmailForm = () => {
+const NewsletterEmailForm = ({ toggleDrawer }) => {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
@@ -73,7 +75,62 @@ const NewsletterEmailForm = () => {
           },
         }}
       />
-      {showThankYouMessage && <h1>hello</h1>}
+      {showThankYouMessage && (
+        <Box
+          sx={{
+            position: "absolute",
+            backgroundColor: "#3d393a",
+            display: "flex",
+            flexDirection: "column",
+            justifyContent: "center",
+            alignItems: "center",
+            padding: "1.5rem",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            zIndex: "1",
+          }}
+        >
+          <Typography
+            sx={{
+              fontSize: "1rem",
+              fontWeight: "700",
+              lineHeight: "1.3",
+              textAlign: "center",
+              color: "#ffffff",
+            }}
+          >
+            Thank you for joining
+          </Typography>
+          <Typography
+            sx={{
+              fontSize: "0.8rem",
+              fontWeight: "400",
+              lineHeight: "1.3",
+              textAlign: "center",
+              margin: "1rem 0",
+              color: "#ffffff",
+            }}
+          >
+            We look forward to sending you exciting content
+          </Typography>
+          <Typography
+            onClick={toggleDrawer(false)}
+            sx={{
+              fontSize: "0.8rem",
+              fontWeight: "400",
+              maxWidth: "90vw",
+              lineHeight: "1.3",
+              textAlign: "center",
+              margin: "0.5rem 0 0 0",
+              color: "#ffffff",
+              textDecoration: "underline",
+            }}
+          >
+            Close
+          </Typography>
+        </Box>
+      )}
 
       <Button
         type="submit"
@@ -89,14 +146,14 @@ const NewsletterEmailForm = () => {
           backgroundColor: "#777777",
           borderRadius: "0.2rem",
           width: "25rem",
-          marginTop: "1.5rem",
+          marginTop: "1rem",
           "&:hover": {
             backgroundColor: "transparent",
             color: "#777777",
           },
         }}
       >
-        Submit
+        Join
       </Button>
     </form>
   );
