@@ -23,7 +23,7 @@ const SideLogo = () => {
           top: isMobile ? "2.5rem" : "1.5rem",
           left: "2rem",
           fontWeight: "900",
-          letterSpacing: "0.05rem",
+          letterSpacing: isMobile ? "-0.1rem" : "-0.15rem",
           zIndex: "1",
         }}
       >

@@ -22,7 +22,7 @@ const MainLogo = () => {
           top: isMobile ? "40%" : "35%",
           left: "2rem",
           fontWeight: "900",
-          letterSpacing: "0.05rem",
+          letterSpacing: isMobile ? "-0.15rem" : "-0.35rem",
           zIndex: "1",
         }}
       >
