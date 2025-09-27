@@ -204,12 +204,62 @@ const ReservationForm = () => {
             fullWidth
             value={formData.partySize}
             onChange={handleChange}
+            inputProps={{ min: 0 }}
           />
           <DatePicker
             label={t("Select Date")}
             value={formData.date}
             onChange={handleDateChange}
             minDate={dayjs()}
+            slotProps={{
+              textField: {
+                required: true,
+                size: "small",
+                fullWidth: true,
+                autoComplete: "off",
+                sx: {
+                  flex: 1,
+                  "& .MuiOutlinedInput-root": {
+                    "& fieldset": { borderColor: "grey" },
+                    "&:hover fieldset": { borderColor: "grey" },
+                    "&.Mui-focused fieldset": { borderColor: "grey" },
+                  },
+                  "& .MuiInputLabel-root.Mui-focused": { color: "grey" },
+                },
+              },
+
+              // 🔥 Pop-up calendar styling
+              popper: {
+                sx: {
+                  "& .MuiPaper-root": {
+                    borderRadius: "8px",
+                    boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.15)",
+                    border: "1px solid #ccc",
+                    backgroundColor: "#fff", // or dark if themed
+                    mt: 1,
+                  },
+                  "& .MuiPickersDay-root": {
+                    fontSize: "0.85rem",
+                    color: "#333",
+                  },
+                  "& .Mui-selected": {
+                    backgroundColor: "#777777 !important",
+                    color: "#fff",
+                  },
+                  "& .MuiPickersDay-root:hover": {
+                    backgroundColor: "#eeeeee",
+                  },
+                },
+              },
+            }}
+          />
+
+          <TimePicker
+            label={t("Select Time")}
+            value={formData.time}
+            onChange={handleTimeChange}
+            minTime={dayjs().hour(11).minute(0)} // 11:00 AM
+            maxTime={dayjs().hour(21).minute(30)} // 10:00 PM
             slotProps={{
               textField: {
                 required: true,
@@ -225,26 +275,47 @@ const ReservationForm = () => {
                   "& .MuiInputLabel-root.Mui-focused": { color: "grey" },
                 },
               },
-            }}
-          />
 
-          <TimePicker
-            label={t("Select Time")}
-            value={formData.time}
-            onChange={handleTimeChange}
-            slotProps={{
-              textField: {
-                required: true,
-                size: "small",
-                fullWidth: true,
+              popper: {
                 sx: {
-                  flex: 1,
-                  "& .MuiOutlinedInput-root": {
-                    "& fieldset": { borderColor: "grey" },
-                    "&:hover fieldset": { borderColor: "grey" },
-                    "&.Mui-focused fieldset": { borderColor: "grey" },
+                  "& .MuiPaper-root": {
+                    borderRadius: "8px",
+                    border: "1px solid #ccc",
+                    boxShadow: "0px 4px 20px rgba(0, 0, 0, 0.15)",
+                    backgroundColor: "#fff",
+                    mt: 1,
                   },
-                  "& .MuiInputLabel-root.Mui-focused": { color: "grey" },
+                  "& .MuiClock-root": {
+                    backgroundColor: "#f9f9f9",
+                  },
+                  "& .MuiClockNumber-root": {
+                    color: "#333",
+                  },
+                  "& .Mui-selected": {
+                    backgroundColor: "#777777 !important",
+                    color: "#fff !important",
+                  },
+                  // 🎯 Style OK and Cancel buttons
+                  "& .MuiDialogActions-root": {
+                    justifyContent: "space-between",
+                    padding: "8px 16px",
+                  },
+                  "& .MuiDialogActions-root .MuiButton-root": {
+                    fontSize: "0.75rem",
+                    textTransform: "uppercase",
+                    padding: "4px 12px",
+                    borderRadius: "4px",
+                  },
+                  "& .MuiDialogActions-root .MuiButton-root:nth-of-type(1)": {
+                    color: "#777777",
+                  },
+                  "& .MuiDialogActions-root .MuiButton-root:nth-of-type(2)": {
+                    backgroundColor: "#777777",
+                    color: "#fff",
+                    "&:hover": {
+                      backgroundColor: "#5c5c5c",
+                    },
+                  },
                 },
               },
             }}
