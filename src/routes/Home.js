@@ -122,6 +122,10 @@ const Home = () => {
                   fontSize: "1.2rem",
                   marginTop: "2rem",
                   textDecoration: "underline",
+                  "&:hover": {
+                    textDecoration: "underline",
+                    opacity: 0.6,
+                  },
                 }}
               >
                 {t("Make a reservation")}

@@ -167,6 +167,7 @@ const SideMenu = () => {
             marginBottom: "0.5rem",
             textDecoration: "underline",
             "&:hover": {
+              textDecoration: "underline",
               opacity: 0.6,
             },
           }}

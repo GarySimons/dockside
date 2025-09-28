@@ -1,3 +1,4 @@
+import { useMediaQuery, useTheme } from "@mui/material";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
 import TextField from "@mui/material/TextField";
@@ -7,6 +8,8 @@ import { useTranslation } from "react-i18next";
 
 const NewsletterEmailForm = ({ toggleDrawer }) => {
   const [email, setEmail] = useState("");
+  const theme = useTheme();
+  const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
   const [submitted, setSubmitted] = useState(false);
   const [showThankYouMessage, setShowThankYouMessage] = useState(false);
   const { t } = useTranslation();
@@ -151,7 +154,7 @@ const NewsletterEmailForm = ({ toggleDrawer }) => {
           color: "#000000",
           backgroundColor: "#ffffff",
           borderRadius: "0.2rem",
-          width: "25rem",
+          width: isMobile ? "80vw" : "25rem",
           marginTop: "1rem",
           "&:hover": {
             backgroundColor: "transparent",

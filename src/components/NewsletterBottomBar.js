@@ -99,7 +99,8 @@ export default function NewsletterBottomBar() {
           cursor: "pointer",
           fontWeight: "800",
           "&:hover": {
-            opacity: "0.6",
+            textDecoration: "underline",
+            opacity: 0.6,
           },
         }}
         onClick={toggleDrawer(true)}

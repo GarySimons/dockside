@@ -161,8 +161,9 @@ const FindUs = () => {
                 padding: "0.5rem 0 1rem 0",
                 fontWeight: "700",
                 display: "flex",
+                flexDirection: isMobile ? "column" : "row",
                 justifyContent: "center",
-                gap: "2rem",
+                gap: isMobile ? "0.2rem" : "2rem",
               }}
             >
               <Typography
@@ -172,6 +173,7 @@ const FindUs = () => {
                   fontHeight: "1.4",
                   fontFamily: "Google Sans Code",
                   fontWeight: "600",
+                  textAlign: "center",
                 }}
               >
                 {t("Tues - Sat 11am - 10pm")}
@@ -183,6 +185,7 @@ const FindUs = () => {
                   fontHeight: "1.4",
                   fontFamily: "Google Sans Code",
                   fontWeight: "600",
+                  textAlign: "center",
                 }}
               >
                 {t("Sun 11am - 8pm")}
