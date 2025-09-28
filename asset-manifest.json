@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/dockside/static/css/main.a117c1e9.css",
-    "main.js": "/dockside/static/js/main.36dfbd89.js",
+    "main.js": "/dockside/static/js/main.16fde2f3.js",
     "static/media/dockside-beer.jpg": "/dockside/static/media/dockside-beer.a9e964dc5a252f53dc05.jpg",
     "static/media/dockside-wine.jpg": "/dockside/static/media/dockside-wine.a57b64737ab7d012d330.jpg",
     "static/media/dockside-home.jpg": "/dockside/static/media/dockside-home.72a7c0b62ce20e2886d8.jpg",
@@ -14,10 +14,10 @@
     "static/media/dockside-starter.jpg": "/dockside/static/media/dockside-starter.2ff7d55e8ecb0db4a631.jpg",
     "index.html": "/dockside/index.html",
     "main.a117c1e9.css.map": "/dockside/static/css/main.a117c1e9.css.map",
-    "main.36dfbd89.js.map": "/dockside/static/js/main.36dfbd89.js.map"
+    "main.16fde2f3.js.map": "/dockside/static/js/main.16fde2f3.js.map"
   },
   "entrypoints": [
     "static/css/main.a117c1e9.css",
-    "static/js/main.36dfbd89.js"
+    "static/js/main.16fde2f3.js"
   ]
 }
